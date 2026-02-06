@@ -1,0 +1,163 @@
+{
+  "api_environments": {
+    "production": {
+      "base_url": "https://api.sureprep.com",
+      "timeout": 30,
+      "retry_count": 3,
+      "retry_delay": 1
+    },
+    "staging": {
+      "base_url": "https://staging-api.sureprep.com",
+      "timeout": 30,
+      "retry_count": 3,
+      "retry_delay": 1
+    },
+    "development": {
+      "base_url": "https://dev-api.sureprep.com",
+      "timeout": 45,
+      "retry_count": 2,
+      "retry_delay": 2
+    },
+    "local": {
+      "base_url": "http://localhost:8080",
+      "timeout": 60,
+      "retry_count": 1,
+      "retry_delay": 0
+    }
+  },
+  "api_versions": {
+    "v5": "/V5.0",
+    "v6": "/V6.0",
+    "v6.1": "/V6.1",
+    "v7": "/V7"
+  },
+  "api_endpoints": {
+    "authentication": {
+      "get_token": "/Authenticate/GetToken"
+    },
+    "binder_info": {
+      "get_binder_details": "/BinderInfo/GetBinderDetails",
+      "get_binder_details_by_id": "/BinderInfo/GetBinderDetails/{binderId}",
+      "get_binder_details_by_unique_id": "/BinderInfo/GetBinderDetailsByUniqueIdentifier",
+      "get_uncleared_notes": "/BinderInfo/GetUnclearedNotes",
+      "get_unreviewed_tr_stamps": "/BinderInfo/GetUnreviewedTRStamps",
+      "get_unreviewed_sticky_notes": "/BinderInfo/GetUnreviewedStickyNotes",
+      "get_unreviewed_workpapers_l1": "/BinderInfo/GetUnreviewedWorkpapersByL1",
+      "get_unreviewed_workpapers_l2": "/BinderInfo/GetUnreviewedWorkpapersByL2",
+      "get_unreviewed_workpapers_l3": "/BinderInfo/GetUnreviewedWorkpapersByL3",
+      "get_unreviewed_workpapers_l4": "/BinderInfo/GetUnreviewedWorkpapersByL4",
+      "get_document_pending_review_count": "/BinderInfo/GetDocumentPendingReviewCount",
+      "get_document_pending_signature_count": "/BinderInfo/GetDocumentPendingSignatureCount",
+      "get_document_pending_upload_count": "/BinderInfo/GetDocumentPendingUploadCount",
+      "get_binder_pending_items": "/BinderInfo/GetBinderPendingItems"
+    },
+    "binder": {
+      "create_binder": "/Binder/CreateBinder",
+      "upload_binder_documents": "/Binder/UploadBinderDocuments",
+      "submit_binder": "/Binder/SubmitBinder",
+      "update_project_id": "/Binder/UpdateProjectID",
+      "get_states_and_localities": "/Binder/GetStatesandLocalities",
+      "get_binders_status_with_states": "/Binder/GetBindersStatusWithStates",
+      "download_binder_pbfx": "/Binder/DownloadBinderPBFX",
+      "get_pbfx": "/Binder/GetPBFx/{binderId}",
+      "get_binder_audit_log": "/Binder/GetBinderAuditLog",
+      "update_owner_member": "/Binder/UpdateOwnerMember",
+      "print_binder": "/Binder/PrintBinder"
+    },
+    "document": {
+      "get_documents": "/Binder/GetDocuments",
+      "download_document": "/Binder/DownloadDocument"
+    },
+    "lookup": {
+      "get_local_path": "/Lookup/GetLocalPathToDownloadFiles",
+      "service_types": "/Lookup/ServiceTypes",
+      "office_locations": "/Lookup/OfficeLocations",
+      "binder_types": "/Lookup/BinderTypes",
+      "tax_software_list": "/Lookup/TaxSoftwareList",
+      "binder_templates": "/Lookup/BinderTemplates",
+      "binder_template_list": "/Lookup/BinderTemplateList",
+      "binder_status_list": "/Lookup/BinderStatusList",
+      "service_units": "/Lookup/ServiceUnits",
+      "domain_information": "/Lookup/DomainInformation",
+      "user_domain_details": "/Lookup/UserDomainDetails",
+      "custom_field_enabled": "/Lookup/CustomFieldEnabled",
+      "ut_search_client_guid": "/Lookup/UTSearchClientGUID",
+      "consent_enabled": "/Lookup/7216ConsentEnabled"
+    },
+    "status": {
+      "get_status": "/Binder/GetStatus",
+      "change_binder_status": "/Binder/ChangeBinderStatus"
+    },
+    "taxcaddy": {
+      "create_client": "/TaxCaddyAPI/CreateClient",
+      "create_drl": "/TaxCaddyAPI/CreateDrl",
+      "get_client_details": "/TaxCaddyAPI/GetClientDetails",
+      "domain_subscribe": "/TaxCaddyAPI/DomainSubscribe",
+      "domain_unsubscribe": "/TaxCaddyAPI/DomainUnsubscribe",
+      "client_subscribe": "/TaxCaddyAPI/ClientSubscribe",
+      "client_unsubscribe": "/TaxCaddyAPI/ClientUnsubscribe",
+      "download_document": "/TaxCaddyAPI/DownloadDocument",
+      "get_drl_status": "/TaxCaddyAPI/GetDRLStatus",
+      "send_drl": "/TaxCaddyAPI/SendDRL",
+      "disconnect_devices": "/TaxCaddyAPI/DisconnectDevices",
+      "send_questionnaire": "/TaxCaddyAPI/SendQuestionnaire",
+      "print_questionnaire": "/TaxCaddyAPI/PrintQuestionnaire",
+      "send_invitation": "/TaxCaddyAPI/SendTaxCaddyInvitation",
+      "send_invitation_reminder": "/TaxCaddyAPI/SendTaxCaddyInvitationReminder",
+      "get_drl_items": "/TaxCaddyAPI/GetDRLItems/{TaxYear}",
+      "delete_drl_item": "/TaxCaddyAPI/DeleteDRLItem/{DrlRequestId}",
+      "get_member_details": "/TaxCaddyAPI/GetMemberDetails",
+      "update_member": "/TaxCaddyAPI/UpdateMember",
+      "document_categories": "/TaxCaddyAPI/TaxCaddyDocumentCategories",
+      "send_document_upload_request": "/TaxCaddyAPI/SendDocumentUploadRequest"
+    },
+    "rwapi": {
+      "launch_review_wizard": "/RWAPI2.0/LaunchReviewWizard"
+    },
+    "ut_integration": {
+      "drl_callback": "/UTIntegration/DRLCallBack/{requestId}",
+      "binder_callback": "/UTIntegration/BinderCallBack/{engagementId}",
+      "tax_file_merged_status": "/UTIntegration/TaxFileMergedStatus",
+      "sp_connect": "/UTIntegration/SPConnect"
+    }
+  },
+  "test_configuration": {
+    "parallel_execution": true,
+    "max_workers": 4,
+    "generate_html_report": true,
+    "generate_json_report": true,
+    "capture_screenshots": false,
+    "log_level": "INFO",
+    "retry_failed_tests": true,
+    "retry_count": 1
+  },
+  "performance_thresholds": {
+    "authentication_max_time": 3.0,
+    "lookup_max_time": 2.0,
+    "create_binder_max_time": 5.0,
+    "upload_document_max_time": 10.0,
+    "download_document_max_time": 10.0,
+    "general_api_max_time": 5.0
+  },
+  "expected_status_codes": {
+    "success": [200, 201],
+    "client_error": [400, 401, 403, 404],
+    "server_error": [500, 502, 503, 504]
+  },
+  "test_markers": {
+    "smoke": "Quick smoke tests for critical functionality",
+    "regression": "Full regression test suite",
+    "authentication": "Authentication related tests",
+    "binderinfo": "BinderInfo API tests",
+    "binder": "Binder CRUD operation tests",
+    "document": "Document operation tests",
+    "lookup": "Lookup service tests",
+    "status": "Status management tests",
+    "taxcaddy": "TaxCaddy API tests",
+    "rwapi": "Review Wizard API tests",
+    "utintegration": "UT Integration tests",
+    "negative": "Negative test scenarios",
+    "performance": "Performance test scenarios",
+    "security": "Security test scenarios"
+  }
+}

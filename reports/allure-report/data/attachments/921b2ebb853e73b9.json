@@ -1,0 +1,11 @@
+{
+  "endpoint": "/V5.0/BinderInfo/GetUnreviewedWorkpapersByL3",
+  "method": "POST",
+  "payload": {
+    "TaxYear": 2025,
+    "ClientID": [
+      "2K25DRL_LIVE"
+    ],
+    "BinderType": "1040"
+  }
+}

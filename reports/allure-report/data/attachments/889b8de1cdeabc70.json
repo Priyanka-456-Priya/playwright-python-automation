@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V5.0/Binder/SubmitBinder",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41968512,
+    "IsInHouseProcess": 0
+  }
+}

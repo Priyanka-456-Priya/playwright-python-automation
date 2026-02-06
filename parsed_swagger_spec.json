@@ -1,0 +1,433 @@
+{
+  "Sheet1": [
+    {
+      "Authenticate": "post /V5.0/Authenticate/GetToken"
+    },
+    {
+      "Authenticate": "AuthenticateV7"
+    },
+    {
+      "Authenticate": "post /V7/Authenticate/GetToken"
+    },
+    {
+      "Authenticate": "BinderInfoV5"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetBinderDetails"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetUnclearedNotes"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetUnreviewedTRStamps"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetUnreviewedStickyNotes"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL1"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL2"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL3"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL4"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetDocumentPendingReviewCount"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetDocumentPendingSignatureCount"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetDocumentPendingUploadCount"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetBinderPendingItems"
+    },
+    {
+      "Authenticate": "post /V5.0/BinderInfo/GetTaxCaddyDocumentsCount"
+    },
+    {
+      "Authenticate": "BinderInfoV7"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetBinderDetails"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetBinderDetails/{binderId}"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetBinderDetailsByUniqueIdentifier"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetUnclearedNotes"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetUnreviewedTRStamps"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetUnreviewedStickyNotes"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL1"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL2"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL3"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL4"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetDocumentPendingReviewCount"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetDocumentPendingSignatureCount"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetDocumentPendingUploadCount"
+    },
+    {
+      "Authenticate": "post /V7/BinderInfo/GetBinderPendingItems"
+    },
+    {
+      "Authenticate": "BinderV5"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/CreateBinder"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/UploadBinderDocuments"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/SubmitBinder"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/UpdateProjectID"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/GetStatesandLocalities"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/GetBindersStatusWithStates"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/DownloadBinderPBFX"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/GetBinderAuditLog"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/UpdateOwnerMember"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/PrintBinder"
+    },
+    {
+      "Authenticate": "BinderV7"
+    },
+    {
+      "Authenticate": "post /V7/Binder/CreateBinder"
+    },
+    {
+      "Authenticate": "post /V7/Binder/UploadBinderDocuments"
+    },
+    {
+      "Authenticate": "post /V7/Binder/GetPBFx/{binderId}"
+    },
+    {
+      "Authenticate": "post /V7/Binder/SubmitBinder"
+    },
+    {
+      "Authenticate": "post /V7/Binder/UpdateProjectID"
+    },
+    {
+      "Authenticate": "post /V7/Binder/GetStatesandLocalities"
+    },
+    {
+      "Authenticate": "post /V7/Binder/GetBindersStatusWithStates"
+    },
+    {
+      "Authenticate": "post /V7/Binder/DownloadBinderPBFX"
+    },
+    {
+      "Authenticate": "post /V7/Binder/GetBinderAuditLog"
+    },
+    {
+      "Authenticate": "post /V7/Binder/UpdateOwnerMember"
+    },
+    {
+      "Authenticate": "post /V7/Binder/PrintBinder"
+    },
+    {
+      "Authenticate": "DocumentV5"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/GetDocuments"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/DownloadDocument"
+    },
+    {
+      "Authenticate": "DocumentV7"
+    },
+    {
+      "Authenticate": "post /V7/Binder/GetDocuments"
+    },
+    {
+      "Authenticate": "post /V7/Binder/DownloadDocument"
+    },
+    {
+      "Authenticate": "LookupV5"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/GetLocalPathToDownloadFiles"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/ServiceTypes"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/OfficeLocations"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/BinderTypes"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/TaxSoftwareList"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/BinderTemplates"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/BinderTemplateList"
+    },
+    {
+      "Authenticate": "post /V5.0/Lookup/BinderStatusList"
+    },
+    {
+      "Authenticate": "LookupV7"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/GetLocalPathToDownloadFiles"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/ServiceTypes"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/OfficeLocations"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/BinderTypes"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/TaxSoftwareList"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/BinderTemplates"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/BinderTemplateList"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/BinderStatusList"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/ServiceUnits"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/DomainInformation"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/UserDomainDetails"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/CustomFieldEnabled"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/UTSearchClientGUID"
+    },
+    {
+      "Authenticate": "post /V7/Lookup/7216ConsentEnabled"
+    },
+    {
+      "Authenticate": "StatusV5"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/GetStatus"
+    },
+    {
+      "Authenticate": "post /V5.0/Binder/ChangeBinderStatus"
+    },
+    {
+      "Authenticate": "StatusV7"
+    },
+    {
+      "Authenticate": "post /V7/Binder/GetStatus"
+    },
+    {
+      "Authenticate": "post /V7/Binder/ChangeBinderStatus"
+    },
+    {
+      "Authenticate": "TaxCaddyAPI"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/CreateClient"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/CreateDrl"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/GetClientDetails"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/DownloadDocument"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/GetDRLStatus"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/SendDRL"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/SendQuestionnaire"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/SendTaxCaddyInvitation"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/SendTaxCaddyInvitationReminder"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/GetDRLItems/{TaxYear}"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/DeleteDRLItem/{DrlRequestId}"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/GetMemberDetails"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/UpdateMember"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/TaxCaddyDocumentCategories"
+    },
+    {
+      "Authenticate": "post /V5.0/TaxCaddyAPI/SendDocumentUploadRequest"
+    },
+    {
+      "Authenticate": "post /V6.0/TaxCaddyAPI/CreateClient"
+    },
+    {
+      "Authenticate": "post /V6.1/TaxCaddyAPI/CreateClient"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/CreateClient"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/CreateDrl"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/GetClientDetails"
+    },
+    {
+      "Authenticate": "put /V7/TaxCaddyAPI/DomainSubscribe"
+    },
+    {
+      "Authenticate": "put /V7/TaxCaddyAPI/DomainUnsubscribe"
+    },
+    {
+      "Authenticate": "put /V7/TaxCaddyAPI/ClientSubscribe"
+    },
+    {
+      "Authenticate": "put /V7/TaxCaddyAPI/ClientUnsubscribe"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/DownloadDocument"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/GetDRLStatus"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/SendDRL"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/DisconnectDevices"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/SendQuestionnaire"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/PrintQuestionnaire"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/SendTaxCaddyInvitation"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/SendTaxCaddyInvitationReminder"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/GetDRLItems/{TaxYear}"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/DeleteDRLItem/{DrlRequestId}"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/GetMemberDetails"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/UpdateMember"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/TaxCaddyDocumentCategories"
+    },
+    {
+      "Authenticate": "post /V7/TaxCaddyAPI/SendDocumentUploadRequest"
+    },
+    {
+      "Authenticate": "RWAPI"
+    },
+    {
+      "Authenticate": "post /V5.0/RWAPI2.0/LaunchReviewWizard"
+    },
+    {
+      "Authenticate": "RWAPIV7"
+    },
+    {
+      "Authenticate": "post /V7/RWAPI2.0/LaunchReviewWizard"
+    },
+    {
+      "Authenticate": "UTIntegration"
+    },
+    {
+      "Authenticate": "post /V5.0/UTIntegration/DRLCallBack/{requestId}"
+    },
+    {
+      "Authenticate": "post /V5.0/UTIntegration/BinderCallBack/{engagementId}"
+    },
+    {
+      "Authenticate": "post /V5.0/UTIntegration/TaxFileMergedStatus"
+    },
+    {
+      "Authenticate": "UTIntegrationV7"
+    },
+    {
+      "Authenticate": "post /V7/UTIntegration/DRLCallBack/{requestId}"
+    },
+    {
+      "Authenticate": "post /V7/UTIntegration/BinderCallBack/{engagementId}"
+    },
+    {
+      "Authenticate": "post /V7/UTIntegration/TaxFileMergedStatus"
+    },
+    {
+      "Authenticate": "post /V7/UTIntegration/SPConnect"
+    }
+  ]
+}

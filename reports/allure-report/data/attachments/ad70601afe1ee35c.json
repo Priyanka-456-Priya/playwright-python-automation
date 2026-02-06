@@ -1,0 +1,24 @@
+{
+  "endpoint": "/V7/TaxCaddyAPI/CreateClient",
+  "method": "POST",
+  "payload": {
+    "ClientType": "Standard",
+    "Owner": "prakash.kokate@thomsonreuters.com",
+    "OfficeLocationID": 20242,
+    "OfficeLocationRestriction": true,
+    "BinderType": "1040",
+    "Taxpayer": {
+      "FirstName": "Karan",
+      "LastName": "Talwar",
+      "Email": "prakash.kokate+889@thomsonreuters.com"
+    },
+    "TaxSoftware": {
+      "SoftwareID": 4,
+      "AccountNumber": "421038",
+      "TaxClientID": "25UTPK11"
+    },
+    "ProjectID": "R2R1",
+    "SSN": "185225181",
+    "UtClientGuid": "A76E38B5-86F5-4051-AC25-B88246C3CDC4"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "/V7/UTIntegration/TaxFileMergedStatus",
+  "method": "POST",
+  "payload": {
+    "FirmId": "string",
+    "UTClientGuid": "string",
+    "TaxClientId": "BULKFILL",
+    "TaxYear": 2025
+  }
+}

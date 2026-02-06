@@ -1,0 +1,11 @@
+{
+  "endpoint": "/V7/TaxCaddyAPI/GetDRLStatus",
+  "method": "POST",
+  "payload": {
+    "DRLRequestIDs": [
+      {
+        "DRLRequestID": 4565570
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "endpoint": "/V7/TaxCaddyAPI/SendDocumentUploadRequest",
+  "method": "POST",
+  "payload": {
+    "TaxClientId": "2025UT11",
+    "TaxYear": 2025,
+    "DocumentUploadRequests": [
+      {
+        "CategoryId": 1000027,
+        "SubCategoryName": "Test"
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "test_credentials": {
+    "valid_user_v5": {
+      "UserName": "PRIYA1",
+      "Password": "Abcd@12345",
+      "APIKey": "C690222D-8625-46F7-92CC-A61DA060D7A9"
+    },
+    "valid_user_v7": {
+      "ClientID": "CCmDgzLV35QnRYPR7c5UJReYqbuNXUoN",
+      "ClientSecret": "BiC_ojduHzVRRG6Kktjx5GTXTT1KeS6nVjqLsrWynSo0IKjT3Xs7gYHK76ap-A65"
+    },
+    "invalid_user": {
+      "username": "invalid@example.com",
+      "password": "WrongPassword"
+    }
+  },
+  "test_binders": {
+    "valid_binder": {
+      "binderId": "12345",
+      "clientName": "Test Client",
+      "taxYear": 2025,
+      "binderType": "1040",
+      "projectId": "PROJ-001",
+      "templateId": "1"
+    },
+    "binder_for_update": {
+      "binderId": "67890",
+      "clientName": "Update Test Client",
+      "taxYear": 2025,
+      "binderType": "1120",
+      "projectId": "PROJ-002"
+    }
+  },
+  "test_documents": {
+    "valid_document": {
+      "documentId": "doc-12345",
+      "binderId": "12345",
+      "documentName": "W2_Form.pdf",
+      "documentType": "W2"
+    },
+    "invalid_document": {
+      "documentId": "invalid-doc",
+      "binderId": "invalid-binder"
+    }
+  },
+  "test_clients": {
+    "taxcaddy_client": {
+      "clientId": "client-12345",
+      "clientName": "TaxCaddy Test Client",
+      "email": "client@example.com",
+      "phone": "555-1234",
+      "taxYear": 2025
+    },
+    "new_client": {
+      "clientName": "New Client Test",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "555-5678"
+    }
+  },
+  "test_drl": {
+    "valid_drl": {
+      "drlId": "drl-12345",
+      "drlRequestId": "drl-req-12345",
+      "clientId": "client-12345",
+      "taxYear": 2025,
+      "status": "pending"
+    }
+  },
+  "test_members": {
+    "valid_member": {
+      "memberId": "member-12345",
+      "memberName": "Test Member",
+      "email": "member@example.com",
+      "role": "preparer"
+    }
+  },
+  "test_status_values": {
+    "status_ids": [
+      {"id": "1", "name": "Draft"},
+      {"id": "2", "name": "In Progress"},
+      {"id": "3", "name": "Under Review"},
+      {"id": "4", "name": "Completed"},
+      {"id": "5", "name": "Submitted"}
+    ]
+  },
+  "test_questionnaire": {
+    "questionnaireId": "q-12345",
+    "clientId": "client-12345",
+    "taxYear": 2025
+  },
+  "test_invitation": {
+    "invitationId": "inv-12345",
+    "clientId": "client-12345",
+    "email": "invite@example.com"
+  },
+  "test_ut_integration": {
+    "requestId": "req-12345",
+    "engagementId": "eng-12345",
+    "fileId": "file-12345"
+  },
+  "test_lookup_data": {
+    "domain": {
+      "domainId": "domain-12345",
+      "domainName": "testdomain.com"
+    },
+    "clientGuid": "test-guid-12345-67890",
+    "categoryId": "cat-12345"
+  },
+  "negative_test_data": {
+    "sql_injection": {
+      "binderId": "'; DROP TABLE Binders; --",
+      "clientName": "1' OR '1'='1"
+    },
+    "xss_attempts": {
+      "clientName": "<script>alert('XSS')</script>",
+      "documentName": "<img src=x onerror=alert('XSS')>"
+    },
+    "buffer_overflow": {
+      "clientName": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "email": "test@xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.com"
+    },
+    "null_values": {
+      "binderId": null,
+      "clientId": null,
+      "documentId": null
+    },
+    "special_characters": {
+      "clientName": "!@#$%^&*()_+-=[]{}|;:',.<>?/~`",
+      "projectId": "\\n\\r\\t\\0"
+    }
+  },
+  "boundary_test_data": {
+    "max_values": {
+      "taxYear": 9999,
+      "binderId": "999999999999",
+      "pageSize": 1000
+    },
+    "min_values": {
+      "taxYear": 1900,
+      "binderId": "1",
+      "pageSize": 1
+    }
+  },
+  "unicode_test_data": {
+    "client_names": [
+      "José García",
+      "李明",
+      "Müller",
+      "Владимир",
+      "محمد"
+    ]
+  }
+}

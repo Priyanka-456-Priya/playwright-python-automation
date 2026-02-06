@@ -1,0 +1,5 @@
+{
+  "endpoint": "/V7/Lookup/7216ConsentEnabled",
+  "method": "POST",
+  "payload": {}
+}

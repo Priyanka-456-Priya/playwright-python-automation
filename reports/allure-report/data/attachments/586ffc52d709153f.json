@@ -1,0 +1,10 @@
+{
+  "endpoint": "/V7/Binder/GetBinderAuditLog",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41963500,
+    "ClientId": "Force",
+    "BinderType": "1040",
+    "TaxYear": 2025
+  }
+}

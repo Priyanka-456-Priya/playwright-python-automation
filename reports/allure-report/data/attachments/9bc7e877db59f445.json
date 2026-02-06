@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V7/Lookup/BinderTemplates",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41963500,
+    "IsInHouseProcess": 0
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "endpoint": "/V5.0/TaxCaddyAPI/DownloadDocument",
+  "method": "POST",
+  "payload": {}
+}

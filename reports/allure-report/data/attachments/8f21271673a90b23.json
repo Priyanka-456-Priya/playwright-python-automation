@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V5.0/Binder/DownloadBinderPBFX",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41957602,
+    "Mapped_Id": "kunal.patil@thomsonreuters.com"
+  }
+}

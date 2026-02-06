@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V7/Lookup/UTSearchClientGUID",
+  "method": "POST",
+  "payload": {
+    "ClientID": "BULKFILL",
+    "TaxYear": 2025
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "endpoint": "/V5.0/BinderInfo/GetUnclearedNotes",
+  "method": "POST",
+  "payload": {
+    "TaxYear": 2025,
+    "ClientID": [
+      "2025UT7"
+    ],
+    "BinderType": "1040"
+  }
+}

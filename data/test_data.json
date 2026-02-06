@@ -1,0 +1,136 @@
+{
+  "test_scenarios": {
+    "400_bad_request": {
+      "malformed_json": {
+        "description": "Send malformed JSON to trigger 400",
+        "endpoint": "/V7/Authenticate/GetToken",
+        "method": "POST",
+        "data": "{invalid_json}",
+        "expected_code": 400
+      },
+      "missing_required_field": {
+        "description": "Send request without required fields",
+        "endpoint": "/V7/Authenticate/GetToken",
+        "method": "POST",
+        "json": {},
+        "expected_code": 400
+      },
+      "invalid_data_type": {
+        "description": "Send wrong data types",
+        "endpoint": "/V5.0/Billing/Commitments",
+        "method": "POST",
+        "json": {
+          "DomainId": "should_be_number",
+          "ServiceTypeId": "invalid"
+        },
+        "expected_code": 400
+      }
+    },
+    "401_unauthorized": {
+      "no_auth_token": {
+        "description": "Request without authentication token",
+        "endpoints": [
+          {
+            "path": "/V5.0/Binder/SubmitBinder",
+            "method": "POST"
+          },
+          {
+            "path": "/V7/Billing/AccountUsageHistory",
+            "method": "POST"
+          },
+          {
+            "path": "/V5.0/BinderInfo/GetBinderDetails",
+            "method": "POST"
+          },
+          {
+            "path": "/V5.0/BinderData/GetPageMetaData",
+            "method": "POST"
+          }
+        ]
+      },
+      "invalid_token": {
+        "description": "Request with invalid token",
+        "token": "invalid_token_12345",
+        "endpoints": [
+          {
+            "path": "/V5.0/Binder/SubmitBinder",
+            "method": "POST"
+          }
+        ]
+      }
+    },
+    "404_not_found": {
+      "note": "SurePrep API returns 200 for invalid paths, not 404",
+      "skip_reason": "Only 1 endpoint in entire API documents 404",
+      "non_existent_resource": {
+        "description": "These don't return 404, skip this test for SurePrep",
+        "endpoints": []
+      }
+    },
+    "405_method_not_allowed": {
+      "wrong_method": {
+        "description": "Use unsupported HTTP method",
+        "examples": [
+          {
+            "endpoint": "/V5.0/Binder/SubmitBinder",
+            "correct_method": "POST",
+            "test_with": "GET",
+            "expected_code": 405
+          },
+          {
+            "endpoint": "/V7/Authenticate/GetToken",
+            "correct_method": "POST",
+            "test_with": "GET",
+            "expected_code": 405
+          }
+        ]
+      }
+    },
+    "500_internal_server_error": {
+      "server_exception": {
+        "description": "Server errors documented in Swagger",
+        "note": "8 endpoints document 500 errors",
+        "endpoints": [
+          "/V5.0/Authenticate/GetToken",
+          "/V7/Authenticate/GetToken"
+        ]
+      }
+    }
+  },
+  "sureprep_specific": {
+    "authentication_endpoint": "/V7/Authenticate/GetToken",
+    "test_credentials": {
+      "note": "Replace with your actual test credentials",
+      "username": "your_test_username",
+      "password": "your_test_password"
+    },
+    "common_test_endpoints": {
+      "authentication": [
+        "/V5.0/Authenticate/GetToken",
+        "/V7/Authenticate/GetToken"
+      ],
+      "binder": [
+        "/V5.0/Binder/SubmitBinder",
+        "/V5.0/Binder/UpdateProjectID",
+        "/V7/Binder/SubmitBinder"
+      ],
+      "billing": [
+        "/V5.0/Billing/Commitments",
+        "/V7/Billing/AccountUsageHistory",
+        "/V5.0/Billing/AddOnlineCredit"
+      ],
+      "binderinfo": [
+        "/V5.0/BinderInfo/GetBinderDetails",
+        "/V7/BinderInfo/GetBinderDetails"
+      ]
+    }
+  },
+  "expected_error_response_fields": {
+    "standard_fields": [
+      "error",
+      "message",
+      "status",
+      "statusCode"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+# API Configuration
+# IMPORTANT: Update these values for your API
+api:
+  base_url: "https://devtr-api-iscrum.sureprep.com"  # Your DEV environment base URL
+  swagger_url: "https://devtr-api-iscrum.sureprep.com/swagger/docs/v1"  # DEV Swagger JSON spec
+  swagger_ui_url: "https://devtr-api-iscrum.sureprep.com/swagger/ui/index"  # DEV Swagger UI
+  timeout: 30
+  retry_count: 3
+  verify_ssl: true  # Set to false if using self-signed certificates (not recommended for production)
+
+# Authentication (if required)
+# Set API_TOKEN environment variable: set API_TOKEN=your_token_here
+auth:
+  type: "bearer"  # Options: bearer, basic, api_key, none (Change to "none" if no auth required)
+  token: "${eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1VTXpPRU14TWpFeU0wWXhSa00yTWpWQ1JrTkdNVUU0UVRjMU5Ua3dRekkyUlVZd05qSkNNZyJ9.eyJpc3MiOiJodHRwczovL2F1dGgtbm9ucHJvZC50aG9tc29ucmV1dGVycy5jb20vIiwic3ViIjoiODR1Q3BJdTc2MW1BSjJwN2VrTVJpdEJOTTNMWUZtRU1AY2xpZW50cyIsImF1ZCI6ImJmMWVlNWM5LWJmNjAtNGFlMy04YmI3LWI0NzI4YTM2ZDgzMiIsImlhdCI6MTc2MTcxODUzNSwiZXhwIjoxNzYxNzMyOTM1LCJzY29wZSI6InN1cmVwcmVwLmFwaS5yZWFkIHN1cmVwcmVwLmFwaS53cml0ZSIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyIsImF6cCI6Ijg0dUNwSXU3NjFtQUoycDdla01SaXRCTk0zTFlGbUVNIn0.dGFDUqE6iWaKzH7L_dd9n-KpYfNAQQuydFyhV4CG6-w1a5p0ODJhNGHpTztblVlV8xmceT90-bp1d8J0e9WzBZ2EDgWK3iz8TmS1gXYIrf7sUyluu0hY1P6CyTIhBQx9Rmh_1SHRZl6BYZgFlMigh4TK37_TSLOzZCRkpPSJYpzw2DccsYf31pJo4E7Kb1XWj0NamrsSkwHiTZwCokaAu1dWJ0E3vnFxJAe15Kb58NMBpBV-jP_c-g_YoG4XN2rY0Z-pJ3qWaLgoK_ML9Pdj6yIZfvTGHj22nEcyqq8OvMMBcrAev13lGaKTy64J_0aw2lreA4Ryip33O6BLelMYvA}"  # Set via environment variable
+  # For basic auth:
+  # username: "${API_USERNAME}"
+  # password: "${API_PASSWORD}"
+  # For API key:
+  # api_key_header: "X-API-Key"
+  # api_key_value: "${API_KEY}"
+
+# Test Configuration
+test:
+  environment: "dev"  # Options: dev, staging, prod
+  parallel_execution: false
+  max_workers: 4
+  capture_screenshots: true
+  generate_html_report: true
+  generate_allure_report: false
+
+# Error Codes to Test
+error_codes:
+  client_errors:
+    - 400  # Bad Request
+    - 401  # Unauthorized
+    - 403  # Forbidden
+    - 404  # Not Found
+    - 405  # Method Not Allowed
+    - 406  # Not Acceptable
+    - 408  # Request Timeout
+    - 409  # Conflict
+    - 410  # Gone
+    - 422  # Unprocessable Entity
+    - 429  # Too Many Requests
+
+  server_errors:
+    - 500  # Internal Server Error
+    - 501  # Not Implemented
+    - 502  # Bad Gateway
+    - 503  # Service Unavailable
+    - 504  # Gateway Timeout
+
+# Logging Configuration
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_path: "reports/test_execution.log"
+  console_output: true
+
+# Report Configuration
+reports:
+  output_dir: "reports"
+  html_report_name: "api_error_validation_report.html"
+  allure_results_dir: "reports/allure-results"
+  screenshots_dir: "reports/screenshots"

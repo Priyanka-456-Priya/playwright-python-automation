@@ -1,0 +1,5 @@
+{
+  "BinderID": 41957656,
+  "ErrorCode": "1119",
+  "ErrorDesc": "Either Binder is in SPProcessing status or provided Custom status is not configured"
+}

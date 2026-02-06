@@ -1,0 +1,156 @@
+{
+  "environment": "devtr",
+  "environment_name": "Development/Test (Devtr)",
+  "base_url": "https://devtr-api-iscrum.sureprep.com",
+  "test_scenarios": {
+    "400_bad_request": {
+      "malformed_json": {
+        "description": "Send malformed JSON to trigger 400",
+        "endpoint": "/V7/Authenticate/GetToken",
+        "method": "POST",
+        "data": "{invalid_json}",
+        "expected_code": 400
+      },
+      "missing_required_field": {
+        "description": "Send request without required fields",
+        "endpoint": "/V7/Authenticate/GetToken",
+        "method": "POST",
+        "json": {},
+        "expected_code": 400
+      },
+      "invalid_data_type": {
+        "description": "Send wrong data types",
+        "endpoint": "/V5.0/Billing/Commitments",
+        "method": "POST",
+        "json": {
+          "DomainId": "should_be_number",
+          "ServiceTypeId": "invalid"
+        },
+        "expected_code": 400
+      }
+    },
+    "401_unauthorized": {
+      "no_auth_token": {
+        "description": "Request without authentication token",
+        "endpoints": [
+          {
+            "path": "/V5.0/Binder/SubmitBinder",
+            "method": "POST"
+          },
+          {
+            "path": "/V7/Billing/AccountUsageHistory",
+            "method": "POST"
+          },
+          {
+            "path": "/V5.0/BinderInfo/GetBinderDetails",
+            "method": "POST"
+          },
+          {
+            "path": "/V5.0/BinderData/GetPageMetaData",
+            "method": "POST"
+          }
+        ]
+      },
+      "invalid_token": {
+        "description": "Request with invalid token",
+        "token": "invalid_token_devtr_12345",
+        "endpoints": [
+          {
+            "path": "/V5.0/Binder/SubmitBinder",
+            "method": "POST"
+          }
+        ]
+      }
+    },
+    "404_not_found": {
+      "note": "SurePrep API returns 200 for invalid paths, not 404",
+      "skip_reason": "Only 1 endpoint in entire API documents 404",
+      "non_existent_resource": {
+        "description": "These don't return 404, skip this test for SurePrep",
+        "endpoints": []
+      }
+    },
+    "405_method_not_allowed": {
+      "wrong_method": {
+        "description": "Use unsupported HTTP method",
+        "examples": [
+          {
+            "endpoint": "/V5.0/Binder/SubmitBinder",
+            "correct_method": "POST",
+            "test_with": "GET",
+            "expected_code": 405
+          },
+          {
+            "endpoint": "/V7/Authenticate/GetToken",
+            "correct_method": "POST",
+            "test_with": "GET",
+            "expected_code": 405
+          }
+        ]
+      }
+    },
+    "500_internal_server_error": {
+      "server_exception": {
+        "description": "Server errors documented in Swagger",
+        "note": "8 endpoints document 500 errors",
+        "endpoints": [
+          "/V5.0/Authenticate/GetToken",
+          "/V7/Authenticate/GetToken"
+        ]
+      }
+    }
+  },
+  "sureprep_specific": {
+    "authentication_endpoint": "/V7/Authenticate/GetToken",
+    "test_user_ids": [1001, 1002, 1003],
+    "test_binder_ids": ["DEVTR-2025-001", "DEVTR-2025-002"],
+    "test_domain_id": 100,
+    "common_test_endpoints": {
+      "authentication": [
+        "/V5.0/Authenticate/GetToken",
+        "/V7/Authenticate/GetToken"
+      ],
+      "binder": [
+        "/V5.0/Binder/SubmitBinder",
+        "/V5.0/Binder/UpdateProjectID",
+        "/V7/Binder/SubmitBinder"
+      ],
+      "billing": [
+        "/V5.0/Billing/Commitments",
+        "/V7/Billing/AccountUsageHistory",
+        "/V5.0/Billing/AddOnlineCredit"
+      ],
+      "binderinfo": [
+        "/V5.0/BinderInfo/GetBinderDetails",
+        "/V7/BinderInfo/GetBinderDetails"
+      ]
+    }
+  },
+  "test_data_samples": {
+    "valid_binder": {
+      "TaxYear": 2025,
+      "ProjectID": "DEVTR-TEST-001",
+      "ClientName": "Test Client Devtr",
+      "Status": "In Progress"
+    },
+    "valid_billing": {
+      "DomainId": 100,
+      "ServiceTypeId": 1,
+      "Amount": 100.00
+    }
+  },
+  "expected_error_response_fields": {
+    "standard_fields": [
+      "error",
+      "message",
+      "status",
+      "statusCode"
+    ]
+  },
+  "test_configuration": {
+    "timeout": 30,
+    "retry_count": 2,
+    "safe_to_run_destructive_tests": true,
+    "max_test_data_records": 100
+  }
+}

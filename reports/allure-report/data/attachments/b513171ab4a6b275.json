@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V7/RWAPI2.0/LaunchReviewWizard",
+  "method": "POST",
+  "payload": {
+    "Email": "Priyanka.patil@thomsonreuters.com",
+    "BinderID": 41967196
+  }
+}

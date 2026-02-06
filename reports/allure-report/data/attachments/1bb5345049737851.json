@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V7/Authenticate/GetToken",
+  "method": "POST",
+  "payload": {
+    "ClientID": "xfO08U5uScAnOISU76C9EOi68XYFfIuR",
+    "ClientSecret": "Cn1gyCldo4o4_C0m8V3O_rJIkBObCvBJyLNIjRqSCxY0B1kjBDkCEYpgZNpoJH0L"
+  }
+}

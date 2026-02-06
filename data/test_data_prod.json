@@ -1,0 +1,168 @@
+{
+  "environment": "prod",
+  "environment_name": "Production",
+  "base_url": "https://api-iscrum.sureprep.com",
+  "test_scenarios": {
+    "400_bad_request": {
+      "malformed_json": {
+        "description": "Send malformed JSON to trigger 400",
+        "endpoint": "/V7/Authenticate/GetToken",
+        "method": "POST",
+        "data": "{invalid_json}",
+        "expected_code": 400
+      },
+      "missing_required_field": {
+        "description": "Send request without required fields",
+        "endpoint": "/V7/Authenticate/GetToken",
+        "method": "POST",
+        "json": {},
+        "expected_code": 400
+      },
+      "invalid_data_type": {
+        "description": "Send wrong data types - USE WITH CAUTION IN PRODUCTION",
+        "endpoint": "/V5.0/Billing/Commitments",
+        "method": "POST",
+        "json": {
+          "DomainId": "should_be_number",
+          "ServiceTypeId": "invalid"
+        },
+        "expected_code": 400,
+        "production_warning": "This test may affect billing - use with caution"
+      }
+    },
+    "401_unauthorized": {
+      "no_auth_token": {
+        "description": "Request without authentication token - SAFE for production",
+        "endpoints": [
+          {
+            "path": "/V5.0/Binder/SubmitBinder",
+            "method": "POST"
+          },
+          {
+            "path": "/V7/Billing/AccountUsageHistory",
+            "method": "POST"
+          },
+          {
+            "path": "/V5.0/BinderInfo/GetBinderDetails",
+            "method": "POST"
+          },
+          {
+            "path": "/V5.0/BinderData/GetPageMetaData",
+            "method": "POST"
+          }
+        ]
+      },
+      "invalid_token": {
+        "description": "Request with invalid token - SAFE for production",
+        "token": "invalid_token_prod_12345",
+        "endpoints": [
+          {
+            "path": "/V5.0/Binder/SubmitBinder",
+            "method": "POST"
+          }
+        ]
+      }
+    },
+    "404_not_found": {
+      "note": "SurePrep API returns 200 for invalid paths, not 404",
+      "skip_reason": "Only 1 endpoint in entire API documents 404",
+      "non_existent_resource": {
+        "description": "These don't return 404, skip this test for SurePrep",
+        "endpoints": []
+      }
+    },
+    "405_method_not_allowed": {
+      "wrong_method": {
+        "description": "Use unsupported HTTP method - SAFE for production",
+        "examples": [
+          {
+            "endpoint": "/V5.0/Binder/SubmitBinder",
+            "correct_method": "POST",
+            "test_with": "GET",
+            "expected_code": 405
+          },
+          {
+            "endpoint": "/V7/Authenticate/GetToken",
+            "correct_method": "POST",
+            "test_with": "GET",
+            "expected_code": 405
+          }
+        ]
+      }
+    },
+    "500_internal_server_error": {
+      "server_exception": {
+        "description": "Server errors documented in Swagger",
+        "note": "8 endpoints document 500 errors",
+        "production_note": "Monitor carefully - these tests may trigger server errors",
+        "endpoints": [
+          "/V5.0/Authenticate/GetToken",
+          "/V7/Authenticate/GetToken"
+        ]
+      }
+    }
+  },
+  "sureprep_specific": {
+    "authentication_endpoint": "/V7/Authenticate/GetToken",
+    "test_user_ids": [],
+    "test_binder_ids": [],
+    "test_domain_id": null,
+    "production_notes": "DO NOT use real production IDs - Use dedicated test account data only",
+    "common_test_endpoints": {
+      "authentication": [
+        "/V5.0/Authenticate/GetToken",
+        "/V7/Authenticate/GetToken"
+      ],
+      "binder": [],
+      "billing": [],
+      "binderinfo": []
+    }
+  },
+  "test_data_samples": {
+    "valid_binder": {
+      "TaxYear": 2025,
+      "ProjectID": "PROD-TEST-READONLY-001",
+      "ClientName": "Production Test Client - READ ONLY",
+      "Status": "Completed",
+      "production_note": "Use only dedicated test accounts for production testing"
+    },
+    "valid_billing": {
+      "DomainId": null,
+      "ServiceTypeId": null,
+      "Amount": null,
+      "production_note": "NEVER use real billing data in production tests"
+    }
+  },
+  "expected_error_response_fields": {
+    "standard_fields": [
+      "error",
+      "message",
+      "status",
+      "statusCode"
+    ]
+  },
+  "test_configuration": {
+    "timeout": 30,
+    "retry_count": 1,
+    "safe_to_run_destructive_tests": false,
+    "max_test_data_records": 10,
+    "production_warnings": {
+      "enabled": true,
+      "require_confirmation": true,
+      "skip_destructive_tests": true
+    },
+    "allowed_operations": [
+      "GET requests only",
+      "Authentication tests",
+      "Read-only operations",
+      "Error code validation (401, 405)"
+    ],
+    "forbidden_operations": [
+      "CREATE operations",
+      "UPDATE operations",
+      "DELETE operations",
+      "Billing modifications",
+      "User data modifications"
+    ]
+  }
+}

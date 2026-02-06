@@ -1,0 +1,7 @@
+{
+  "endpoint": "/V7/Binder/GetStatus",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41975105
+  }
+}

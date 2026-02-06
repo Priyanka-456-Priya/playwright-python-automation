@@ -1,0 +1,2 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): devtr-api-iscrum.sureprep.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://devtr-api-iscrum.sureprep.com:443 "POST /V7/Lookup/OfficeLocations HTTP/1.1" 200 32

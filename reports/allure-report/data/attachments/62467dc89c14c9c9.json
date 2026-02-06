@@ -1,0 +1,5 @@
+{
+  "endpoint": "/V5.0/Lookup/BinderTypes",
+  "method": "POST",
+  "payload": {}
+}

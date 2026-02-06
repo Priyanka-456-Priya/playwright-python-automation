@@ -1,0 +1,11 @@
+{
+  "endpoint": "/V5.0/TaxCaddyAPI/SendTaxCaddyInvitationReminder",
+  "method": "POST",
+  "payload": {
+    "TaxPayers": [
+      {
+        "TaxClientId": "R2RRFA"
+      }
+    ]
+  }
+}

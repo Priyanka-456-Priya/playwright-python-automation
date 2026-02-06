@@ -1,0 +1,14 @@
+{
+  "endpoint": "/V5.0/TaxCaddyAPI/CreateDrl",
+  "method": "POST",
+  "payload": {
+    "TaxYear": 2025,
+    "BinderType": "1040",
+    "MergePDF": true,
+    "TaxPayers": [
+      {
+        "TaxClientID": "2025UT12"
+      }
+    ]
+  }
+}

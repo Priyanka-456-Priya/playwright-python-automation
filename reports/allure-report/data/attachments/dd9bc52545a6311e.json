@@ -1,0 +1,9 @@
+{
+  "endpoint": "/V5.0/Authenticate/GetToken",
+  "method": "POST",
+  "payload": {
+    "UserName": "PRIYA",
+    "Password": "Abcd@12345",
+    "APIKey": "24CDFF63-782A-4382-9F4B-0272C03ED095"
+  }
+}

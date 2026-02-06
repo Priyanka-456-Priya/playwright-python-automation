@@ -1,0 +1,9 @@
+{
+  "endpoint": "/V5.0/TaxCaddyAPI/DeleteDRLItem/{DrlRequestId}",
+  "method": "POST",
+  "payload": {
+    "DRLSubCategoryId": [
+      36759656
+    ]
+  }
+}

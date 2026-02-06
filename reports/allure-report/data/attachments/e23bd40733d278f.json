@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V7/BinderInfo/GetBinderDetailsByUniqueIdentifier",
+  "method": "POST",
+  "payload": {
+    "TaxYear": 2025,
+    "UniqueIdentifier": "c0b2e667-9bcf-4903-a9d3-a0e16517c0ea"
+  }
+}

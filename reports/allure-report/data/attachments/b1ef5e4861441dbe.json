@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://api.sureprep.com/V7/DRLInfo/GetDRLOutput",
+  "method": "POST",
+  "payload": {
+    "ClientNumber": "BULKFILL",
+    "TaxYear": 2025
+  }
+}

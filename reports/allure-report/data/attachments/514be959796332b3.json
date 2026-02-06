@@ -1,0 +1,13 @@
+{
+  "endpoint": "/V5.0/Binder/UpdateOwnerMember",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41968512,
+    "LoginUserEmail": "Priyanka.patil@thomsonreuters.com",
+    "OwnerEmail": "Priyanka.patil@thomsonreuters.com",
+    "LocationID": 0,
+    "AssignMember": [
+      "Anushka.kadam@thomsonreuters.com"
+    ]
+  }
+}

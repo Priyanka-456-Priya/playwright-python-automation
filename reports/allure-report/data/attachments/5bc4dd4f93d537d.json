@@ -1,0 +1,7 @@
+{
+  "endpoint": "/V7/Binder/GetStatesandLocalities",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41976512
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "/V7/Binder/GetBindersStatusWithStates",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41976512,
+    "TaxYear": 2025,
+    "PageNumber": 1,
+    "PageSize": 10
+  }
+}

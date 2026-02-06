@@ -1,0 +1,7 @@
+{
+  "endpoint": "/V5.0/Binder/PrintBinder",
+  "method": "POST",
+  "payload": {
+    "BinderID": 41968512
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "endpoint": "/V7/UTIntegration/SPConnect",
+  "method": "POST",
+  "payload": {
+    "IsConnected": true
+  }
+}

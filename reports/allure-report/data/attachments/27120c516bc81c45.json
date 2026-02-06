@@ -1,0 +1,13 @@
+{
+  "endpoint": "/V5.0/TaxCaddyAPI/SendQuestionnaire",
+  "method": "POST",
+  "payload": {
+    "TaxYear": 2025,
+    "BinderType": "1040",
+    "TaxPayers": [
+      {
+        "TaxClientID": "2025UT12"
+      }
+    ]
+  }
+}

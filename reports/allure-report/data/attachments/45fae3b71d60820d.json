@@ -1,0 +1,20 @@
+{
+  "endpoint": "/V7/Binder/CreateBinder",
+  "method": "POST",
+  "payload": {
+    "Custom_Field": "ADGTEST",
+    "Email": "priyanka.patil@thomsonreuters.com",
+    "Unique_Identifier": "DRLTEST",
+    "Service_Type_Id": 2,
+    "Template_Id": 41947075,
+    "Has_Leadsheet": 1,
+    "SubmissionType": 1,
+    "Is7216ConsentReceived": 1,
+    "Client_Id": "DRLTEST",
+    "Locator_No": "DRLTEST",
+    "LinkBinder": "0",
+    "Filing_Status": "1",
+    "Taxpayer_SSN": "147852369",
+    "Office_Location_Id": 20242
+  }
+}

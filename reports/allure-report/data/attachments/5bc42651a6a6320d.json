@@ -1,0 +1,12 @@
+{
+  "endpoint": "/V7/TaxCaddyAPI/UpdateMember",
+  "method": "POST",
+  "payload": {
+    "TaxPayerTaxClientID": [
+      "2025UT11"
+    ],
+    "AssignMember": [
+      "anushka.kadam@thomsonreuters.com"
+    ]
+  }
+}

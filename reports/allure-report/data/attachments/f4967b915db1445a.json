@@ -1,0 +1,21 @@
+{
+  "endpoint": "/V5.0/TaxCaddyAPI/CreateClient",
+  "method": "POST",
+  "payload": {
+    "ClientType": "Standard",
+    "Owner": "karandeepsingh.talwar@thomsonreuters.com",
+    "OfficeLocationID": 20242,
+    "OfficeLocationRestriction": true,
+    "BinderType": "1040",
+    "Taxpayer": {
+      "FirstName": "Karan",
+      "LastName": "Talwar",
+      "Email": "karandeepsingh.talwar+998@thomsonreuters.com"
+    },
+    "TaxSoftware": {
+      "SoftwareID": 4,
+      "AccountNumber": "421038",
+      "TaxClientID": "2025UT12"
+    }
+  }
+}

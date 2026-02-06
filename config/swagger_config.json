@@ -1,0 +1,83 @@
+{
+  "swagger_sources": [
+    {
+      "name": "SurePrep API",
+      "swagger_url": "https://api.sureprep.com/swagger/docs/v1",
+      "enabled": true,
+      "version": "v7"
+    }
+  ],
+  "endpoints_to_test": {
+    "include_patterns": [
+      "/api/*"
+    ],
+    "exclude_patterns": [
+      "/health",
+      "/metrics"
+    ],
+    "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"]
+  },
+  "error_scenarios": {
+    "400": {
+      "description": "Bad Request",
+      "test_scenarios": [
+        "missing_required_field",
+        "invalid_data_type",
+        "malformed_json"
+      ]
+    },
+    "401": {
+      "description": "Unauthorized",
+      "test_scenarios": [
+        "missing_auth_token",
+        "expired_token",
+        "invalid_token"
+      ]
+    },
+    "403": {
+      "description": "Forbidden",
+      "test_scenarios": [
+        "insufficient_permissions",
+        "resource_access_denied"
+      ]
+    },
+    "404": {
+      "description": "Not Found",
+      "test_scenarios": [
+        "invalid_endpoint",
+        "non_existent_resource_id"
+      ]
+    },
+    "405": {
+      "description": "Method Not Allowed",
+      "test_scenarios": [
+        "wrong_http_method"
+      ]
+    },
+    "422": {
+      "description": "Unprocessable Entity",
+      "test_scenarios": [
+        "validation_failed",
+        "business_rule_violation"
+      ]
+    },
+    "429": {
+      "description": "Too Many Requests",
+      "test_scenarios": [
+        "rate_limit_exceeded"
+      ]
+    },
+    "500": {
+      "description": "Internal Server Error",
+      "test_scenarios": [
+        "server_exception"
+      ]
+    },
+    "503": {
+      "description": "Service Unavailable",
+      "test_scenarios": [
+        "service_down"
+      ]
+    }
+  }
+}

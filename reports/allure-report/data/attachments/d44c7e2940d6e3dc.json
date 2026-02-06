@@ -1,0 +1,10 @@
+{
+  "endpoint": "/V5.0/Binder/GetDocuments",
+  "method": "POST",
+  "payload": {
+    "AllFiles": 12,
+    "FromDate": "2025-12-01T06:48:21.240Z",
+    "ToDate": "2025-12-26T06:48:21.240Z",
+    "Binder_ID": 41957446
+  }
+}

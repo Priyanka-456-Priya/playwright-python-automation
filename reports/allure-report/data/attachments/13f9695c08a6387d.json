@@ -1,0 +1,10 @@
+{
+  "endpoint": "/V5.0/Lookup/BinderTemplates",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41959111,
+    "Status_Id": 0,
+    "Mapped_Id": "Priyanka.patil@thomsonreuters.com",
+    "IsInHouseProcess": 0
+  }
+}

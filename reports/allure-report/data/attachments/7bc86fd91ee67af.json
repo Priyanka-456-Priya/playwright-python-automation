@@ -1,0 +1,5 @@
+{
+  "endpoint": "/V7/BinderInfo/GetBinderDetails/{binderId}",
+  "method": "POST",
+  "payload": {}
+}

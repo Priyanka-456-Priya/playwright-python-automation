@@ -1,0 +1,9 @@
+{
+  "endpoint": "/V7/TaxCaddyAPI/GetDRLItems/{TaxYear}",
+  "method": "POST",
+  "payload": {
+    "TaxClientIds": [
+      "2025UT12"
+    ]
+  }
+}

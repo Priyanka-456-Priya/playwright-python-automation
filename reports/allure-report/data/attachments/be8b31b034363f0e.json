@@ -1,0 +1,9 @@
+{
+  "endpoint": "/V7/TaxCaddyAPI/GetMemberDetails",
+  "method": "POST",
+  "payload": {
+    "TaxPayerTaxClientID": [
+      "2025UT11"
+    ]
+  }
+}

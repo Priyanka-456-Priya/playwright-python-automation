@@ -1,0 +1,567 @@
+[
+  {
+    "Swagger APIs": "post /V5.0/Authenticate/GetToken",
+    "Input": "{\n  \"UserName\": \"PRIYA1\",\n  \"Password\": \"Abcd@12345\",\n  \"APIKey\": \"C690222D-8625-46F7-92CC-A61DA060D7A9\"\n}",
+    "Output": "{\n  \"Token\": \"bfc674f5-476d-4e2f-a0d0-6e62b20990b7\",\n  \"TokenExpiry\": \"2026-01-07T17:52:41.4002206Z\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/Authenticate/GetToken",
+    "Input": "{\n  \"ClientID\": \"nbwG2GAZ2KrT2ltfMKya7wcxhiIkSuqU\",\n  \"ClientSecret\": \"1VmmDaS_d676RcNRAiiqv93kfZcVMfZed9s1zar7gLXUa5-U4E1P-kAa1oaqHmZ6\"\n}",
+    "Output": "{\n  \"Token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJERTBPVEF3UVVVMk16Z3hPRUpGTkVSRk5qUkRNakkzUVVFek1qZEZOVEJCUkRVMlJrTTRSZyJ9.eyJpc3MiOiJodHRwczovL2F1dGgudGhvbXNvbnJldXRlcnMuY29tLyIsInN1YiI6Im5id0cyR0FaMktyVDJsdGZNS3lhN3djeGhpSWtTdXFVQGNsaWVudHMiLCJhdWQiOiJlMWFiMzg0Yi1mOTNiLTRiODktODc0NC0zYzVkYmIzMWVlMDUiLCJpYXQiOjE3Njc3OTM5ODYsImV4cCI6MTc2Nzg4MDM4Niwic2NvcGUiOiJzdXJlcHJlcC5hcGkucmVhZCBzdXJlcHJlcC5hcGkud3JpdGUiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJuYndHMkdBWjJLclQybHRmTUt5YTd3Y3hoaUlrU3VxVSJ9.BxqqMzuFsn1F8xFNXeFfwpB8Z-r_ReN9apbSnfURovk6hSfPUQRXfx8MI7icGK5t5zc6LhNoGewrRWbTqg8l-ILYtsIaqJ9awmtSlcDs2aC39s_OAkewQcL0AGnT9a6eiOpyIKKmDbDWrPABofQVjgEkxUo_xIRXVcsb0CKOmdsds1Bkmd1la-od8htXrlYOUu66-ofvRWykO7z66WX-vDE_eTz1TfGSvrCbpiva-AGLRk_RFM_4LKZLvpHTf3IdC_u1QWMRsHE_nt5RQNtxldhp25_O9C6N1WMGC-AGOb3ssEpp5-BhzlBnBz4L06SPQe8W2lCH_kzmj0Am051oTQ\",\n  \"TokenExpiry\": \"2026-01-08T13:53:06.1601428Z\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetBinderDetails",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2025UT7\"\n  ],\n  \"BinderType\": \"1040\",\n  \"OwnerEmail\": \"tr.karandeepsingh.talwar+421038@outlook.com\",\n\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2025UT7\",\n    \"TaxYear\": 2025,\n    \"ClientName\": \"John, 222-22-2222\",\n    \"BinderID\": 41957548,\n    \"TaxClientID\": \"2025UT7\",\n    \"Status\": \"\",\n    \"Service\": \"1040SCAN PRO\",\n    \"BinderType\": \"1040\",\n    \"Owner\": \"Karandeep singh Talwar\",\n    \"OfficeLocation\": \"Ann Arbor\",\n    \"SubmitedOn\": \"2025-12-20T23:56:56\",\n    \"ModifiedOn\": \"2025-12-21T00:09:51\",\n    \"EngagementCode\": \"Test\",\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"Leadsheets\": \"None\",\n    \"ActualHours\": \"\",\n    \"AssignedMembersList\": [\n      \"\"\n    ],\n    \"Expedite\": \"NA\",\n    \"DueDate\": null,\n    \"Pages\": 1,\n    \"DownloadedOn\": null,\n    \"Is7216ConsentReceived\": null,\n    \"FirmID\": \"OnboardingRR-01\",\n    \"OwnerEmail\": \"tr.karandeepsingh.talwar+421038@outlook.com\",\n    \"IsTCLinkBinder\": \"No\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetUnclearedNotes",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2025UT7\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2025UT7\",\n    \"NoteType\": \"General\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"2025UT7\",\n    \"NoteType\": \"Missing Item\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"2025UT7\",\n    \"NoteType\": \"Permanent\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"2025UT7\",\n    \"NoteType\": \"Review\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"2025UT7\",\n    \"NoteType\": \"Custom\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetUnreviewedTRStamps",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2025UT7\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2025UT7\",\n    \"ResultCount\": 2,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 18\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetUnreviewedStickyNotes",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2025UT7\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2025UT7\",\n    \"ResultCount\": 1,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 1\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL1",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 38,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL2",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 38,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL3",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 37,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetUnreviewedWorkpapersByL4",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 37,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetDocumentPendingReviewCount",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"clientId\": \"2K25DRL_LIVE\",\n    \"taxYear\": 2025,\n    \"resultCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"totalCount\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetDocumentPendingSignatureCount",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"clientId\": \"2K25DRL_LIVE\",\n    \"taxYear\": 2025,\n    \"resultCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"totalCount\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetDocumentPendingUploadCount",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"clientId\": \"2K25DRL_LIVE\",\n    \"taxYear\": 2025,\n    \"resultCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"totalCount\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetBinderPendingItems",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": \"2025UT7\"\n}",
+    "Output": "{\n  \"BinderDetails\": [\n    {\n      \"ClientID\": \"2025UT7\",\n      \"TaxYear\": 2025,\n      \"ClientName\": \"John, 222-22-2222\",\n      \"BinderID\": 41957548,\n      \"TaxClientID\": \"2025UT7\",\n      \"Status\": \"\",\n      \"Service\": \"1040SCAN PRO\",\n      \"BinderType\": \"1040\",\n      \"Owner\": \"Karandeep singh Talwar\",\n      \"OfficeLocation\": \"Ann Arbor\",\n      \"SubmitedOn\": \"2025-12-20T23:56:56\",\n      \"ModifiedOn\": \"2026-01-02T02:24:38\",\n      \"EngagementCode\": \"Test\",\n      \"ErrorCode\": null,\n      \"ErrorMessage\": null,\n      \"TaxSoftware\": \"UltraTax CS\",\n      \"Leadsheets\": \"None\",\n      \"ActualHours\": \"\",\n      \"AssignedMembersList\": [\n        \"\"\n      ],\n      \"Expedite\": \"NA\",\n      \"DueDate\": null,\n      \"Pages\": 1,\n      \"DownloadedOn\": null,\n      \"Is7216ConsentReceived\": null,\n      \"FirmID\": null,\n      \"OwnerEmail\": null,\n      \"IsTCLinkBinder\": \"No\"\n    }\n  ],\n  \"UnclearedNotes\": null,\n  \"UnReviewdTRStamps\": null,\n  \"UnReviewdStickyNotes\": null,\n  \"UnReviewdWorkPapersbyL1\": null,\n  \"UnReviewdWorkPapersbyL2\": null,\n  \"UnReviewdWorkPapersbyL3\": null,\n  \"UnReviewdWorkPapersbyL4\": null,\n  \"RequestedDocumentPendingReview\": [],\n  \"RequestedDocumentPendingSignature\": [],\n  \"RequestedDocumentPendingUpload\": []\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/BinderInfo/GetTaxCaddyDocumentsCount",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"5406XO_LIV\"\n  ]\n}",
+    "Output": "[\n  {\n    \"ClientId\": \"5406XO_LIV\",\n    \"TaxClientId\": \"5406XO\",\n    \"TotalTCDocuments\": 17,\n    \"FetchSubmittedTCDocuments\": 0,\n    \"IncludeInBinderTCDocuments\": 17,\n    \"ExcludedTCDocuments\": 0,\n    \"FailedTCDocuments\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetBinderDetails",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"BULKFILL\"\n  ],\n  \"PageNumber\": 1,\n  \"PageSize\": 10,\n  \"BinderType\": \"1040\",\n \n  \"OwnerEmail\": \"Priyanka.patil@thomsonreuters.com\",\n\n}",
+    "Output": "[\n  {\n    \"UniqueIdentifier\": \"ed3cf4b0-2de7-45f0-bd58-1fbf1147a70f\",\n    \"ClientID\": \"BULKFILL\",\n    \"TaxYear\": 2025,\n    \"ClientName\": \"\",\n    \"BinderID\": 41957446,\n    \"TaxClientID\": \"BULKFILL\",\n    \"Status\": \"In Error\",\n    \"Service\": \"1040SCAN PRO\",\n    \"BinderType\": \"1040\",\n    \"Owner\": \"Priyanka Patil\",\n    \"OfficeLocation\": \"Ann Arbor\",\n    \"SubmitedOn\": \"2025-12-20T23:23:14\",\n    \"ModifiedOn\": \"2025-12-20T23:23:20\",\n    \"EngagementCode\": \"TESTTT\",\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"Leadsheets\": \"Classic Leadsheets\",\n    \"ActualHours\": \"\",\n    \"AssignedMembersList\": [\n      \"\"\n    ],\n    \"Expedite\": \"NA\",\n    \"DueDate\": null,\n    \"Pages\": 0,\n    \"DownloadedOn\": null,\n    \"Is7216ConsentReceived\": null,\n    \"FirmID\": \"OnboardingRR-01\",\n    \"OwnerEmail\": \"Priyanka.Patil@thomsonreuters.com\",\n    \"IsTCLinkBinder\": \"Yes\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetBinderDetails/{binderId}",
+    "Input": 41963500,
+    "Output": "{\n  \"UniqueIdentifier\": \"c0b2e667-9bcf-4903-a9d3-a0e16517c0ea\",\n  \"ClientID\": \"Force-23.12.25\",\n  \"TaxYear\": 2025,\n  \"ClientName\": \"john, 123-45-6789\",\n  \"BinderID\": 41963500,\n  \"TaxClientID\": \"Force\",\n  \"Status\": \"\",\n  \"Service\": \"1040SCAN PRO\",\n  \"BinderType\": \"1040\",\n  \"Owner\": \"Priyanka Patil\",\n  \"OfficeLocation\": \"Ann Arbor\",\n  \"SubmitedOn\": \"2025-12-22T22:45:59\",\n  \"ModifiedOn\": \"2025-12-22T23:26:57\",\n  \"EngagementCode\": \"dev\",\n  \"ErrorCode\": null,\n  \"ErrorMessage\": null,\n  \"TaxSoftware\": \"UltraTax CS\",\n  \"Leadsheets\": \"Classic Leadsheets\",\n  \"ActualHours\": \"\",\n  \"AssignedMembersList\": [\n    \"anushka.kadam@thomsonreuters.com\"\n  ],\n  \"Expedite\": \"NA\",\n  \"DueDate\": null,\n  \"Pages\": 10,\n  \"DownloadedOn\": null,\n  \"Is7216ConsentReceived\": null,\n  \"FirmID\": \"OnboardingRR-01\",\n  \"OwnerEmail\": \"Priyanka.Patil@thomsonreuters.com\",\n  \"IsTCLinkBinder\": \"No\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetBinderDetailsByUniqueIdentifier",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"UniqueIdentifier\": \"c0b2e667-9bcf-4903-a9d3-a0e16517c0ea\"\n}",
+    "Output": "[\n  {\n    \"UniqueIdentifier\": \"c0b2e667-9bcf-4903-a9d3-a0e16517c0ea\",\n    \"ClientID\": \"Force-23.12.25\",\n    \"TaxYear\": 2025,\n    \"ClientName\": \"john, 123-45-6789\",\n    \"BinderID\": 41963500,\n    \"TaxClientID\": \"Force\",\n    \"Status\": \"\",\n    \"Service\": \"1040SCAN PRO\",\n    \"BinderType\": \"1040\",\n    \"Owner\": \"Priyanka Patil\",\n    \"OfficeLocation\": \"Ann Arbor\",\n    \"SubmitedOn\": \"2025-12-22T22:45:59\",\n    \"ModifiedOn\": \"2025-12-22T23:26:57\",\n    \"EngagementCode\": \"dev\",\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"Leadsheets\": \"Classic Leadsheets\",\n    \"ActualHours\": \"\",\n    \"AssignedMembersList\": [\n      \"anushka.kadam@thomsonreuters.com\"\n    ],\n    \"Expedite\": \"NA\",\n    \"DueDate\": null,\n    \"Pages\": 10,\n    \"DownloadedOn\": null,\n    \"Is7216ConsentReceived\": null,\n    \"FirmID\": \"OnboardingRR-01\",\n    \"OwnerEmail\": \"Priyanka.Patil@thomsonreuters.com\",\n    \"IsTCLinkBinder\": \"No\"\n  },\n  {\n    \"UniqueIdentifier\": \"c0b2e667-9bcf-4903-a9d3-a0e16517c0ea\",\n    \"ClientID\": \"Force\",\n    \"TaxYear\": 2025,\n    \"ClientName\": \"john, 123-45-6789\",\n    \"BinderID\": 41971967,\n    \"TaxClientID\": \"Force\",\n    \"Status\": \"In Verification\",\n    \"Service\": \"1040SCAN PRO\",\n    \"BinderType\": \"1040\",\n    \"Owner\": \"Dhanshree Rahate\",\n    \"OfficeLocation\": \"Ann Arbor\",\n    \"SubmitedOn\": \"2025-12-29T22:57:57\",\n    \"ModifiedOn\": \"2025-12-29T22:58:12\",\n    \"EngagementCode\": \"DEV\",\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"Leadsheets\": \"Classic Leadsheets\",\n    \"ActualHours\": \"\",\n    \"AssignedMembersList\": [\n      \"\"\n    ],\n    \"Expedite\": \"NA\",\n    \"DueDate\": null,\n    \"Pages\": 10,\n    \"DownloadedOn\": null,\n    \"Is7216ConsentReceived\": null,\n    \"FirmID\": \"OnboardingRR-01\",\n    \"OwnerEmail\": \"dhanshree.rahate@thomsonreuters.com\",\n    \"IsTCLinkBinder\": \"No\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetUnclearedNotes",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"BULKFILL\"\n  ],\n  \"PageNumber\": 01,\n  \"PageSize\": 10,\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"BULKFILL\",\n    \"NoteType\": \"General\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"BULKFILL\",\n    \"NoteType\": \"Missing Item\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"BULKFILL\",\n    \"NoteType\": \"Permanent\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"BULKFILL\",\n    \"NoteType\": \"Review\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  },\n  {\n    \"ClientID\": \"BULKFILL\",\n    \"NoteType\": \"Custom\",\n    \"ResultCount\": 0,\n    \"TotalCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetUnreviewedTRStamps",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2025UT7\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2025UT7\",\n    \"ResultCount\": 2,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 18\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetUnreviewedStickyNotes",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2025UT7\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2025UT7\",\n    \"ResultCount\": 1,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 1\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL1",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 38,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL2",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 38,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL3",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 37,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetUnreviewedWorkpapersByL4",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"ClientID\": \"2K25DRL_LIVE\",\n    \"ResultCount\": 37,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"TotalCount\": 41\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetDocumentPendingReviewCount",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"clientId\": \"2K25DRL_LIVE\",\n    \"taxYear\": 2025,\n    \"resultCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"totalCount\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetDocumentPendingSignatureCount",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"clientId\": \"2K25DRL_LIVE\",\n    \"taxYear\": 2025,\n    \"resultCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"totalCount\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetDocumentPendingUploadCount",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"2K25DRL_LIVE\"\n  ],\n\n  \"BinderType\": \"1040\"\n}",
+    "Output": "[\n  {\n    \"clientId\": \"2K25DRL_LIVE\",\n    \"taxYear\": 2025,\n    \"resultCount\": 0,\n    \"ErrorCode\": null,\n    \"ErrorMessage\": null,\n    \"totalCount\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/BinderInfo/GetBinderPendingItems",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": \"2025UT7\"\n}",
+    "Output": "{\n  \"BinderDetails\": [\n    {\n      \"ClientID\": \"2025UT7\",\n      \"TaxYear\": 2025,\n      \"ClientName\": \"John, 222-22-2222\",\n      \"BinderID\": 41957548,\n      \"TaxClientID\": \"2025UT7\",\n      \"Status\": \"\",\n      \"Service\": \"1040SCAN PRO\",\n      \"BinderType\": \"1040\",\n      \"Owner\": \"Karandeep singh Talwar\",\n      \"OfficeLocation\": \"Ann Arbor\",\n      \"SubmitedOn\": \"2025-12-20T23:56:56\",\n      \"ModifiedOn\": \"2026-01-02T02:24:38\",\n      \"EngagementCode\": \"Test\",\n      \"ErrorCode\": null,\n      \"ErrorMessage\": null,\n      \"TaxSoftware\": \"UltraTax CS\",\n      \"Leadsheets\": \"None\",\n      \"ActualHours\": \"\",\n      \"AssignedMembersList\": [\n        \"\"\n      ],\n      \"Expedite\": \"NA\",\n      \"DueDate\": null,\n      \"Pages\": 1,\n      \"DownloadedOn\": null,\n      \"Is7216ConsentReceived\": null,\n      \"FirmID\": null,\n      \"OwnerEmail\": null,\n      \"IsTCLinkBinder\": \"No\"\n    }\n  ],\n  \"UnclearedNotes\": null,\n  \"UnReviewdTRStamps\": null,\n  \"UnReviewdStickyNotes\": null,\n  \"UnReviewdWorkPapersbyL1\": null,\n  \"UnReviewdWorkPapersbyL2\": null,\n  \"UnReviewdWorkPapersbyL3\": null,\n  \"UnReviewdWorkPapersbyL4\": null,\n  \"RequestedDocumentPendingReview\": [],\n  \"RequestedDocumentPendingSignature\": [],\n  \"RequestedDocumentPendingUpload\": []\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/PrintBinder",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"ClientID\": [\n    \"5406XO_LIV\"\n  ]\n}",
+    "Output": "[\n  {\n    \"ClientId\": \"5406XO_LIV\",\n    \"TaxClientId\": \"5406XO\",\n    \"TotalTCDocuments\": 17,\n    \"FetchSubmittedTCDocuments\": 0,\n    \"IncludeInBinderTCDocuments\": 17,\n    \"ExcludedTCDocuments\": 0,\n    \"FailedTCDocuments\": 0\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/CreateBinder",
+    "Input": "{\n\"AccountNumber\": \"421038\",\n\"Custom_Field\": \"ADGTEST\",\n\"Email\": \"priyanka.patil@thomsonreuters.com\",\n\"Unique_Identifier\": \"B611C44C-7058-4F5C-A789-5F5A9E597BC7\",\n\"Service_Type_Id\": 2,\n\"Template_Id\": 41947079,\n\"Has_Leadsheet\": 1,                     \n\"SubmissionType\": 1,\n\"Is7216ConsentReceived\": 1,\n\"Client_Id\": \"ABCDRT\",\n\"Locator_No\": \"ABCDRT\",\n\"LinkBinder\": \"0\",\n\"Filing_Status\": \"1\",\n\"Taxpayer_SSN\": \"147852369\",\n\"Office_Location_Id\": 20242\n}",
+    "Output": 41968512
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/UploadBinderDocuments",
+    "Input": 41968512,
+    "Output": "[\n  {\n    \"name\": \"3.   W-3.pdf\",\n    \"message\": \"\",\n    \"size\": 811143\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/SubmitBinder",
+    "Input": "{\n  \"Binder_Id\": 41968512,\n  \"IsInHouseProcess\": 0\n}",
+    "Output": 200
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/UpdateProjectID",
+    "Input": "{\n  \"BinderID\": 41968512,\n  \"ProjectID\": \"ABCDRT\",\n  \"ClientId\": \"ABCDRT\",\n  \"BinderType\": \"1040\",\n  \"TaxYear\": 2025\n}",
+    "Output": "200(Updated project id successfully reflected on fileroom)"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/GetStatesandLocalities",
+    "Input": "{\n  \"Binder_Id\": 41976512\n}",
+    "Output": null
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/GetBindersStatusWithStates",
+    "Input": "{\n  \"Binder_Id\": 41976512,\n  \"TaxYear\": 2025,\n  \"PageNumber\": 1,\n  \"PageSize\": 10\n}",
+    "Output": "{\n  \"RecordCount\": 1,\n  \"Binderdetail\": [\n    {\n      \"Client_Id\": \"2025RFA_States\",\n      \"Binder_Id\": 41976512,\n      \"status_id\": 18032,\n      \"status\": \"Complete\",\n      \"error_code\": null,\n      \"error_message\": null,\n      \"Date\": \"Jan  2 2026  7:46AM\",\n      \"States\": []\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/DownloadBinderPBFX",
+    "Input": "{\n  \"Binder_Id\": 41957602,\n  \"Mapped_Id\": \"kunal.patil@thomsonreuters.com\"\n}",
+    "Output": "Download \"SPbinder PBFX - 2025 41957602- Anderson Jack_4468995-API.pbfx\""
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/GetBinderAuditLog",
+    "Input": "{\n  \"Binder_Id\": 41968512,\n  \"ClientId\": \"ABCDRT\",\n  \"BinderType\": \"1040\",\n  \"TaxYear\": 2025\n}",
+    "Output": "[\n  {\n    \"LoginUserName\": \"PRIYAM\",\n    \"OwnerName\": \"PRIYAM\",\n    \"SourceIP\": \"\",\n    \"Event\": \"Add Documents\",\n    \"BinderID\": \"41968512\",\n    \"EventDescription\": \"PRIYAM has added documents to the binder successfully. (ClientID: ABCDRT)\",\n    \"EventTime\": \"12/25/2025 10:55:20 PM\",\n    \"EventStatus\": \"Success\",\n    \"LoginURL\": \"\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/UpdateOwnerMember",
+    "Input": "{\n  \"Binder_Id\": 41968512,\n  \"LoginUserEmail\": \"Priyanka.patil@thomsonreuters.com\",\n  \"OwnerEmail\": \"Priyanka.patil@thomsonreuters.com\",\n  \"LocationID\": 0,\n  \"AssignMember\": [\n    \"Anushka.kadam@thomsonreuters.com\"\n  ]\n}",
+    "Output": "[\n  {\n    \"ErrorCode\": \"\",\n    \"ErrorDesc\": \"\",\n    \"FieldName\": \"Priyanka.Patil@thomsonreuters.com\",\n    \"Message\": \"Success\"\n  },\n  {\n    \"ErrorCode\": \"\",\n    \"ErrorDesc\": \"\",\n    \"FieldName\": \"anushka.kadam@thomsonreuters.com\",\n    \"Message\": \"Added\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/PrintBinder",
+    "Input": "{\n  \"BinderID\": 41968512\n}",
+    "Output": "{\n  \"BinderID\": 41968512,\n  \"ErrorCode\": \"1149\",\n  \"ErrorDesc\": \"The binder is currently in SP Processing/In Verification status and cannot be printed.\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/CreateBinder",
+    "Input": "{\n\"Custom_Field\": \"ADGTEST\",\n\"Email\": \"priyanka.patil@thomsonreuters.com\",\n\"Unique_Identifier\": \"DRLTEST\",\n\"Service_Type_Id\": 2,\n\"Template_Id\": 41947075,\n\"Has_Leadsheet\": 1,                     \n\"SubmissionType\": 1,\n\"Is7216ConsentReceived\": 1,\n\"Client_Id\": \"DRLTEST\",\n\"Locator_No\": \"DRLTEST\",\n\"LinkBinder\": \"0\",\n\"Filing_Status\": \"1\",\n\"Taxpayer_SSN\": \"147852369\",\n\"Office_Location_Id\": 20242\n}",
+    "Output": 41975105
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/UploadBinderDocuments",
+    "Input": 41975105,
+    "Output": "[\n  {\n    \"name\": \"3.   W-3.pdf\",\n    \"message\": \"\",\n    \"size\": 811143\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/GetPBFx/{binderId}",
+    "Input": 41975105,
+    "Output": "Download Lacerte_TaxFileUpload_bbe2098a-e70f-4002-85e6-981dd266b826.pbfx"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/SubmitBinder",
+    "Input": 41975105,
+    "Output": "200 - Binder get submitted sucessfully"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/UpdateProjectID",
+    "Input": "{\n  \"BinderID\": 41975105,\n  \"ProjectID\": \"TESTFGH\",\n  \"ClientId\": \"DRLTEST\",\n  \"BinderType\": \"1040\",\n  \"TaxYear\": 2025\n}",
+    "Output": "200 - Project ID get updated sucessfully and refelct on Fileroom PSProject Column"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/GetStatesandLocalities",
+    "Input": "{\n  \"Binder_Id\": 41976512\n}",
+    "Output": null
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/GetBindersStatusWithStates",
+    "Input": "{\n  \"Binder_Id\": 41976512,\n  \"TaxYear\": 2025,\n  \"PageNumber\": 1,\n  \"PageSize\": 10\n}",
+    "Output": "{\n  \"RecordCount\": 1,\n  \"Binderdetail\": [\n    {\n      \"Client_Id\": \"2025RFA_States\",\n      \"Binder_Id\": 41976512,\n      \"status_id\": 18032,\n      \"status\": \"Complete\",\n      \"error_code\": null,\n      \"error_message\": null,\n      \"Date\": \"Jan  2 2026  7:46AM\",\n      \"States\": []\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/DownloadBinderPBFX",
+    "Input": "{\n  \"Binder_Id\": 41957602,\n  \"Mapped_Id\": \"kunal.patil@thomsonreuters.com\"\n}",
+    "Output": "Download \"SPbinder PBFX - 2025 41957602- Anderson Jack_4468995-API.pbfx\""
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/GetBinderAuditLog",
+    "Input": "{\n  \"Binder_Id\": 41963500,\n  \"ClientId\": \"Force\",\n  \"BinderType\": \"1040\",\n  \"TaxYear\": 2025\n}",
+    "Output": "[\n  {\n    \"LoginUserName\": \"\",\n    \"OwnerName\": \"DHANSHREE\",\n    \"SourceIP\": \"\",\n    \"Event\": \"Print DreamWorkpapers\",\n    \"BinderID\": \"41963500\",\n    \"EventDescription\": \"Printed DreamWorkpapers of the binder successfully. (Client ID: Force-23.12.25)\",\n    \"EventTime\": \"12/30/2025 11:00:48 PM\",\n    \"EventStatus\": \"Success\",\n    \"LoginURL\": \"\"\n  },\n  {\n    \"LoginUserName\": \"DHANSHREE\",\n    \"OwnerName\": \"DHANSHREE\",\n    \"SourceIP\": \"10.2.102.250\",\n    \"Event\": \"Access Binder\",\n    \"BinderID\": \"41963500\",\n    \"EventDescription\": \"DHANSHREE has successfully accessed the binder. Binder's PBFX file was launched within 60 secs after the download completed.\",\n    \"EventTime\": \"12/22/2025 10:49:28 PM\",\n    \"EventStatus\": \"Success\",\n    \"LoginURL\": \"https://binderservicesproduction.sureprep.com/\"\n  },\n  {\n    \"LoginUserName\": \"DHANSHREE\",\n    \"OwnerName\": \"DHANSHREE\",\n    \"SourceIP\": \"\",\n    \"Event\": \"Add Documents\",\n    \"BinderID\": \"41963500\",\n    \"EventDescription\": \"DHANSHREE has added documents to the binder successfully. (ClientID: Force-23.12.25)\",\n    \"EventTime\": \"12/22/2025 10:46:15 PM\",\n    \"EventStatus\": \"Success\",\n    \"LoginURL\": \"\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/UpdateOwnerMember",
+    "Input": "{\n  \"Binder_Id\": 41963500,\n  \"LoginUserEmail\": \"Priyanka.patil@thomsonreuters.com\",\n  \"OwnerEmail\": \"Priyanka.patil@thomsonreuters.com\",\n  \"LocationID\": 0,\n  \"AssignMember\": [\n    \"Anushka.kadam@thomsonreuters.com\"\n  ]\n}",
+    "Output": "[\n  {\n    \"ErrorCode\": \"\",\n    \"ErrorDesc\": \"\",\n    \"FieldName\": \"Priyanka.Patil@thomsonreuters.com\",\n    \"Message\": \"Success\"\n  },\n  {\n    \"ErrorCode\": \"\",\n    \"ErrorDesc\": \"\",\n    \"FieldName\": \"anushka.kadam@thomsonreuters.com\",\n    \"Message\": \"Added\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/PrintBinder",
+    "Input": "{\n  \"BinderID\": 41963500\n}",
+    "Output": "\"Success\""
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/GetDocuments",
+    "Input": "{\n  \"AllFiles\": 12,\n  \"FromDate\": \"2025-12-01T06:48:21.240Z\",\n  \"ToDate\": \"2025-12-26T06:48:21.240Z\",\n  \"Binder_ID\": 41957446\n}",
+    "Output": null
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/DownloadDocument",
+    "Input": "Document ID - e18ac376-69af-4df6-8ff2-e9b0ce3396e0",
+    "Output": "Response Body\nDownload \"DMV Fees and Taxes.pdf\"\nResponse Code\n200"
+  },
+  {
+    "Swagger APIs": "https://api.sureprep.com/V7/DRLInfo/GetDRLOutput",
+    "Input": "{\n  \"ClientNumber\": \"BULKFILL\",\n  \"TaxYear\": 2025\n}",
+    "Output": "[\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"DMV Fees and Taxes\",\n    \"DRLItemName\": \"DMV Fees and Taxes\",\n    \"DRLCategoryId\": 7755,\n    \"DocumentId\": \"e18ac376-69af-4df6-8ff2-e9b0ce3396e0\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Non-Cash Contributions\",\n    \"DRLItemName\": \"Non-Cash Contributions\",\n    \"DRLCategoryId\": 7750,\n    \"DocumentId\": \"6dabf3e5-0860-4d7f-b6f2-c1764f988492\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Other Interest Expenses\",\n    \"DRLItemName\": \"Other Interest Expenses\",\n    \"DRLCategoryId\": 7753,\n    \"DocumentId\": \"398e9079-e7e0-443b-89d4-5820079e65c0\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Sch. E (Rents and Royalties)\",\n    \"DRLItemName\": \"MAKWANA ROAD (Spouse)\",\n    \"DRLCategoryId\": 7589,\n    \"DocumentId\": \"e5a017b2-2115-40b0-bd91-3d8079fc3b57\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Medical Expenses\",\n    \"DRLItemName\": \"Medical Expenses\",\n    \"DRLCategoryId\": 7752,\n    \"DocumentId\": \"d9d4e0a8-a0a5-4fc9-a7a0-5ab948663357\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Schedule K-1s\",\n    \"DRLItemName\": \"Pp\",\n    \"DRLCategoryId\": 7587,\n    \"DocumentId\": null\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Charitable Contributions\",\n    \"DRLItemName\": \"Charitable Contributions\",\n    \"DRLCategoryId\": 7751,\n    \"DocumentId\": \"497739d1-8e64-45bf-9bfa-a526046438ab\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"1098s (Home Mortgage Interest)\",\n    \"DRLItemName\": \"1098s (Home Mortgage Interest)\",\n    \"DRLCategoryId\": 7754,\n    \"DocumentId\": \"c4e54555-dc5c-480a-8e51-df03d0e1f303\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Sch. E (Rents and Royalties)\",\n    \"DRLItemName\": \"royality\",\n    \"DRLCategoryId\": 7589,\n    \"DocumentId\": \"a5562650-5114-4721-8bba-0f9041beee26\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Sch. F (Farm Income)\",\n    \"DRLItemName\": \"POULTRY FARMS - EGGS AND CHICKEN (11-2222333)\",\n    \"DRLCategoryId\": 7567,\n    \"DocumentId\": \"09184902-71ef-4be8-b106-3324e38229b7\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Other Taxes\",\n    \"DRLItemName\": \"Other Taxes\",\n    \"DRLCategoryId\": 7756,\n    \"DocumentId\": \"77b6524f-b2f4-406a-9fd4-6198b63cf6af\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Sch. C (Business Income)\",\n    \"DRLItemName\": \"HANDICRAFTS (Joint)\",\n    \"DRLCategoryId\": 7559,\n    \"DocumentId\": \"fbfecf19-05ee-4e9b-9030-17ef9a5472c4\"\n  },\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DRLCategoryName\": \"Real Estate Taxes\",\n    \"DRLItemName\": \"Real Estate Taxes\",\n    \"DRLCategoryId\": 7757,\n    \"DocumentId\": \"ecd6bb84-ebfa-494d-b7b3-6f9137e4ab91\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": null,
+    "Input": "{\n  \"ClientNumber\": \"BULKFILL\",\n  \"TaxYear\": 2025\n}",
+    "Output": "[\n  {\n    \"ClientNumber\": \"BULKFILL\",\n    \"DocumentID\": \"05393C5F-CAC1-4034-82BA-F0F5707EC381\",\n    \"ErrorCode\": \"\",\n    \"ErrorMessage\": \"\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/GetDocuments",
+    "Input": "{\n  \"AllFiles\": 10,\n  \"FromDate\": \"2025-12-01T05:58:04.348Z\",\n  \"ToDate\": \"2025-12-31T05:58:04.348Z\",\n  \"Binder_ID\": 41963500\n}",
+    "Output": "[\n  {\n    \"BinderID\": 41963500,\n    \"DocumentName\": \"Bookmarks only 2050 DreamWorkpapers - 2025(I) - john, 123-45-6789_Force-23.12.25_41963500_V02.pdf\",\n    \"DocumentID\": \"3D9FCB51-4EFD-4C2B-AFFC-5984B385DCA1\",\n    \"TaxYear\": 2025,\n    \"DocumentType\": \"DreamWorkpapers\",\n    \"Version\": \"V2\",\n    \"Size\": 292264,\n    \"UniqueID\": \"c0b2e667-9bcf-4903-a9d3-a0e16517c0ea\",\n    \"EngagementType\": \"1040\",\n    \"Owner\": \"Priyanka, Patil\",\n    \"OwnerEmail\": \"Priyanka.Patil@thomsonreuters.com\",\n    \"CreatedDate\": \"2025-12-30T23:12:42.477\",\n    \"ClientID\": \"Force-23.12.25\",\n    \"ClientName\": \"john, 123-45-6789\",\n    \"CustomField\": \"dev\"\n  },\n  {\n    \"BinderID\": 41963500,\n    \"DocumentName\": \"2055 DreamWorkpapers - 2025(I) - john, 123-45-6789_Force-23.12.25_41963500_V02.xlsx\",\n    \"DocumentID\": \"3666B71B-8382-4A9F-93B9-E838724BAD68\",\n    \"TaxYear\": 2025,\n    \"DocumentType\": \"DreamWorkpapers\",\n    \"Version\": \"V2\",\n    \"Size\": 3217414,\n    \"UniqueID\": \"c0b2e667-9bcf-4903-a9d3-a0e16517c0ea\",\n    \"EngagementType\": \"1040\",\n    \"Owner\": \"Priyanka, Patil\",\n    \"OwnerEmail\": \"Priyanka.Patil@thomsonreuters.com\",\n    \"CreatedDate\": \"2025-12-30T23:12:41.62\",\n    \"ClientID\": \"Force-23.12.25\",\n    \"ClientName\": \"john, 123-45-6789\",\n    \"CustomField\": \"dev\"\n  },\n  {\n    \"BinderID\": 41963500,\n    \"DocumentName\": \"2050 DreamWorkpapers - 2025(I) - john, 123-45-6789_Force-23.12.25_41963500_V02.pdf\",\n    \"DocumentID\": \"5F93F129-4647-4781-A85B-33BEFA5B9915\",\n    \"TaxYear\": 2025,\n    \"DocumentType\": \"DreamWorkpapers\",\n    \"Version\": \"V2\",\n    \"Size\": 1576196,\n    \"UniqueID\": \"c0b2e667-9bcf-4903-a9d3-a0e16517c0ea\",\n    \"EngagementType\": \"1040\",\n    \"Owner\": \"Priyanka, Patil\",\n    \"OwnerEmail\": \"Priyanka.Patil@thomsonreuters.com\",\n    \"CreatedDate\": \"2025-12-30T23:12:37.087\",\n    \"ClientID\": \"Force-23.12.25\",\n    \"ClientName\": \"john, 123-45-6789\",\n    \"CustomField\": \"dev\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/DownloadDocument",
+    "Input": "05393C5F-CAC1-4034-82BA-F0F5707EC381",
+    "Output": "\nDownload \"DocumentRequest@2025[I]@BULKFILL_v01.pdf\""
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/GetLocalPathToDownloadFiles",
+    "Input": "Token - 4b348a81-5694-49b6-8386-99503a77d65f",
+    "Output": "{\n  \"DomainID\": 12655283,\n  \"SurePrepLocalFiles\": \"C:\\\\SurePrepLocalFiles\",\n  \"DownloadFolderPath\": \"C:\\\\SurePrepLocalFiles\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/ServiceTypes",
+    "Input": "Token - 4b348a81-5694-49b6-8386-99503a77d65f",
+    "Output": "[\n  {\n    \"Id\": 2,\n    \"Name\": \"1040SCAN PRO\"\n  },\n  {\n    \"Id\": 3,\n    \"Name\": \"1040SCANverify Offshore\"\n  },\n  {\n    \"Id\": 4,\n    \"Name\": \"1040SCANverify Onshore\"\n  },\n  {\n    \"Id\": 5,\n    \"Name\": \"Outsource Offshore\"\n  },\n  {\n    \"Id\": 10,\n    \"Name\": \"1040SCAN ORGANIZE\"\n  },\n  {\n    \"Id\": 13,\n    \"Name\": \"Leadsheet for SPbinder\"\n  },\n  {\n    \"Id\": 18,\n    \"Name\": \"TaxCaddy Gather\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/OfficeLocations",
+    "Input": "Token - 4b348a81-5694-49b6-8386-99503a77d65f",
+    "Output": "[\n  {\n    \"Id\": 20242,\n    \"Name\": \"Ann Arbor\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/BinderTypes",
+    "Input": "Token - 4b348a81-5694-49b6-8386-99503a77d65f",
+    "Output": "[\n  {\n    \"Id\": 1,\n    \"Name\": \"1040\"\n  },\n  {\n    \"Id\": 3,\n    \"Name\": \"1041\"\n  },\n  {\n    \"Id\": 11,\n    \"Name\": \"1065\"\n  },\n  {\n    \"Id\": 12,\n    \"Name\": \"1120\"\n  },\n  {\n    \"Id\": 13,\n    \"Name\": \"1120S\"\n  }"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/TaxSoftwareList",
+    "Input": "Token - 4b348a81-5694-49b6-8386-99503a77d65f",
+    "Output": "[\n  {\n    \"Id\": 1,\n    \"Name\": \"GoSystem Tax RS\"\n  },\n  {\n    \"Id\": 2,\n    \"Name\": \"Lacerte\"\n  },\n  {\n    \"Id\": 4,\n    \"Name\": \"UltraTax CS\"\n  },\n  {\n    \"Id\": 7,\n    \"Name\": \"CCH Axcess Tax\"\n  },\n  {\n    \"Id\": 9,\n    \"Name\": \"UltraTax CS (Virtual Office CS or SaaS)\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/BinderTemplates",
+    "Input": "{\n  \"Binder_Id\": 41959111,\n  \"Status_Id\": 0,\n  \"Mapped_Id\": \"Priyanka.patil@thomsonreuters.com\",\n  \"IsInHouseProcess\": 0\n}",
+    "Output": "[\n  {\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwareId\": 4,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947085,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"CCH Axcess Tax\",\n    \"TaxSoftwareId\": 7,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947084,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Lacerte\",\n    \"TaxSoftwareId\": 2,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947083,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"GoSystem Tax RS\",\n    \"TaxSoftwareId\": 1,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947082,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Others\",\n    \"TaxSoftwareId\": 6,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947080,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwareId\": 4,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947079,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/BinderTemplateList",
+    "Input": "Token - 4b348a81-5694-49b6-8386-99503a77d65f",
+    "Output": "[\n  {\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwareId\": 4,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947085,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"CCH Axcess Tax\",\n    \"TaxSoftwareId\": 7,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947084,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Lacerte\",\n    \"TaxSoftwareId\": 2,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947083,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Lookup/BinderStatusList",
+    "Input": "Token - 4b348a81-5694-49b6-8386-99503a77d65f",
+    "Output": "[\n  {\n    \"Id\": 0,\n    \"Name\": \"Completed\"\n  },\n  {\n    \"Id\": 1,\n    \"Name\": \"SPProcessing\"\n  },\n  {\n    \"Id\": 2,\n    \"Name\": \"In Verification\"\n  },\n  {\n    \"Id\": 3,\n    \"Name\": \"Documents Uploading\"\n  },\n  {\n    \"Id\": 4,\n    \"Name\": \"In Error\"\n  },\n  {\n    \"Id\": 23005,\n    \"Name\": \"PPTEST\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/GetLocalPathToDownloadFiles",
+    "Input": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJERTBPVEF3UVVVMk16Z3hPRUpGTkVSRk5qUkRNakkzUVVFek1qZEZOVEJCUkRVMlJrTTRSZyJ9.eyJpc3MiOiJodHRwczovL2F1dGgudGhvbXNvbnJldXRlcnMuY29tLyIsInN1YiI6InhmTzA4VTV1U2NBbk9JU1U3NkM5RU9pNjhYWUZmSXVSQGNsaWVudHMiLCJhdWQiOiJlMWFiMzg0Yi1mOTNiLTRiODktODc0NC0zYzVkYmIzMWVlMDUiLCJpYXQiOjE3NjcxNjM0MTgsImV4cCI6MTc2NzI0OTgxOCwic2NvcGUiOiJzdXJlcHJlcC5hcGkucmVhZCBzdXJlcHJlcC5hcGkud3JpdGUiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJ4Zk8wOFU1dVNjQW5PSVNVNzZDOUVPaTY4WFlGZkl1UiJ9.C_k11woq_HqyGkudPGxymLy2bqkT_k1msprXCEaNL_Wf2vSMDLBEzRopfcEg9Wx-Q6O3vSfJKfeZJfsSj-2zEZXT3YPC_eIz6Z6g74uiCKxI8dXJrvUjiA19NoUY8julDiAcSvK_rdoQ_3yyoj6wVGh3uLrEHxcJoFVE7LMTfmHjhUcn4JanjrpokC0pzCSJB_8fRcx8WW9E3fc73U2EAIX08Bubsr0dPUw1Iy1MuwI7Z8187tsUQezFpeQKJs6N5BGgIeAXfLV974684RWrWZ-S9-rmM6GKolpWp-zk6wr2SwALCvumsjrhq6-_04VUL43iusjPwRHss2m4fue47Q",
+    "Output": "{\n  \"DomainID\": 12655283,\n  \"SurePrepLocalFiles\": \"C:\\\\SurePrepLocalFiles\",\n  \"DownloadFolderPath\": \"C:\\\\SurePrepLocalFiles\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/ServiceTypes",
+    "Input": null,
+    "Output": "[\n  {\n    \"Id\": 2,\n    \"Name\": \"1040SCAN PRO\"\n  },\n  {\n    \"Id\": 3,\n    \"Name\": \"1040SCANverify Offshore\"\n  },\n  {\n    \"Id\": 4,\n    \"Name\": \"1040SCANverify Onshore\"\n  },\n  {\n    \"Id\": 5,\n    \"Name\": \"Outsource Offshore\"\n  },\n  {\n    \"Id\": 10,\n    \"Name\": \"1040SCAN ORGANIZE\"\n  },\n  {\n    \"Id\": 13,\n    \"Name\": \"Leadsheet for SPbinder\"\n  },\n  {\n    \"Id\": 18,\n    \"Name\": \"TaxCaddy Gather\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/OfficeLocations",
+    "Input": null,
+    "Output": "[\n  {\n    \"Id\": 20242,\n    \"Name\": \"Ann Arbor\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/BinderTypes",
+    "Input": null,
+    "Output": "[\n  {\n    \"Id\": 1,\n    \"Name\": \"1040\"\n  },\n  {\n    \"Id\": 3,\n    \"Name\": \"1041\"\n  },\n  {\n    \"Id\": 11,\n    \"Name\": \"1065\"\n  },\n  {\n    \"Id\": 12,\n    \"Name\": \"1120\"\n  },\n  {\n    \"Id\": 13,\n    \"Name\": \"1120S\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/TaxSoftwareList",
+    "Input": null,
+    "Output": "[\n  {\n    \"Id\": 1,\n    \"Name\": \"GoSystem Tax RS\"\n  },\n  {\n    \"Id\": 2,\n    \"Name\": \"Lacerte\"\n  },\n  {\n    \"Id\": 4,\n    \"Name\": \"UltraTax CS\"\n  },\n  {\n    \"Id\": 7,\n    \"Name\": \"CCH Axcess Tax\"\n  },\n  {\n    \"Id\": 9,\n    \"Name\": \"UltraTax CS (Virtual Office CS or SaaS)\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/BinderTemplates",
+    "Input": "{\n  \"Binder_Id\": 41963500,\n\n  \"IsInHouseProcess\": 0\n}",
+    "Output": "[\n  {\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwareId\": 4,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947085,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"CCH Axcess Tax\",\n    \"TaxSoftwareId\": 7,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947084,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Lacerte\",\n    \"TaxSoftwareId\": 2,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947083,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"GoSystem Tax RS\",\n    \"TaxSoftwareId\": 1,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947082,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Others\",\n    \"TaxSoftwareId\": 6,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947080,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwareId\": 4,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947079,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"CCH Axcess Tax\",\n    \"TaxSoftwareId\": 7,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947078,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Lacerte\",\n    \"TaxSoftwareId\": 2,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947075,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"GoSystem Tax RS\",\n    \"TaxSoftwareId\": 1,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947062,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"\",\n    \"TaxSoftwareId\": 0,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1120S\",\n    \"BinderTypeId\": 13,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41939502,\n    \"Name\": \"1120S - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"\",\n    \"TaxSoftwareId\": 0,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1120\",\n    \"BinderTypeId\": 12,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41939501,\n    \"Name\": \"1120 - SurePrep Predefined\"\n  },"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/BinderTemplateList",
+    "Input": null,
+    "Output": "[\n  {\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwareId\": 4,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947085,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"CCH Axcess Tax\",\n    \"TaxSoftwareId\": 7,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947084,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Lacerte\",\n    \"TaxSoftwareId\": 2,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947083,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"GoSystem Tax RS\",\n    \"TaxSoftwareId\": 1,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1041\",\n    \"BinderTypeId\": 3,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947082,\n    \"Name\": \"1041 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"Others\",\n    \"TaxSoftwareId\": 6,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947080,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwareId\": 4,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947079,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },\n  {\n    \"TaxSoftware\": \"CCH Axcess Tax\",\n    \"TaxSoftwareId\": 7,\n    \"TaxYear\": 2025,\n    \"BinderType\": \"1040\",\n    \"BinderTypeId\": 1,\n    \"Error\": null,\n    \"ErrorCode\": 0,\n    \"Id\": 41947078,\n    \"Name\": \"1040 - SurePrep Predefined\"\n  },"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/BinderStatusList",
+    "Input": null,
+    "Output": "[\n  {\n    \"Id\": 0,\n    \"Name\": \"Completed\"\n  },\n  {\n    \"Id\": 1,\n    \"Name\": \"SPProcessing\"\n  },\n  {\n    \"Id\": 2,\n    \"Name\": \"In Verification\"\n  },\n  {\n    \"Id\": 3,\n    \"Name\": \"Documents Uploading\"\n  },\n  {\n    \"Id\": 4,\n    \"Name\": \"In Error\"\n  },\n  {\n    \"Id\": 23005,\n    \"Name\": \"PPTEST\"\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/ServiceUnits",
+    "Input": null,
+    "Output": "[\n  {\n    \"ServiceName\": \"Outsource Offshore\",\n    \"ServiceTypeId\": 5,\n    \"RemainingUnits\": 1000\n  },\n  {\n    \"ServiceName\": \"1040SCANverify Onshore\",\n    \"ServiceTypeId\": 4,\n    \"RemainingUnits\": 3000\n  },\n  {\n    \"ServiceName\": \"1040SCANverify Offshore\",\n    \"ServiceTypeId\": 3,\n    \"RemainingUnits\": 2979\n  },\n  {\n    \"ServiceName\": \"1040SCAN PRO\",\n    \"ServiceTypeId\": 2,\n    \"RemainingUnits\": 13470\n  },\n  {\n    \"ServiceName\": \"1040SCAN ORGANIZE\",\n    \"ServiceTypeId\": 10,\n    \"RemainingUnits\": 2988\n  },\n  {\n    \"ServiceName\": \"Leadsheet for SPbinder\",\n    \"ServiceTypeId\": 13,\n    \"RemainingUnits\": 4843\n  },\n  {\n    \"ServiceName\": \"TaxCaddy\",\n    \"ServiceTypeId\": 17,\n    \"RemainingUnits\": 9593\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/DomainInformation",
+    "Input": null,
+    "Output": "{\n  \"DomainID\": 12655283,\n  \"DomainName\": \"Onboarding Team RR\",\n  \"DomainAbbreviation\": \"OnboardingRR-01\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/UserDomainDetails",
+    "Input": "Priyanka.patil@thomsonreuters.com",
+    "Output": "[\n  {\n    \"DomainID\": 2960240,\n    \"DomainName\": \"TESTING TEAM @ MUMBAI\",\n    \"DomainAbbreviation\": \"Testing-05\",\n    \"ApiKey\": \"673A16D0-C0E3-46CA-BFE0-85BB7BFE2E69\"\n  },\n  {\n    \"DomainID\": 2960256,\n    \"DomainName\": \"TESTING TEAM @ MUMBAI\",\n    \"DomainAbbreviation\": \"TESTING-07\",\n    \"ApiKey\": \"7ABF74DF-0694-43D1-8561-8EFB1ECF4139\"\n  },\n  {\n    \"DomainID\": 2960272,\n    \"DomainName\": \"TESTING TEAM @ MUMBAI\",\n    \"DomainAbbreviation\": \"TESTING-09\",\n    \"ApiKey\": \"908FBA86-2B66-4BA4-80A6-4719A873F561\"\n  },\n  {\n    \"DomainID\": 2960280,\n    \"DomainName\": \"TESTING TEAM @ MUMBAI\",\n    \"DomainAbbreviation\": \"TESTING-10\",\n    \"ApiKey\": \"7C4222B8-6404-458D-A8D9-FD8020B4921F\"\n  },\n  {\n    \"DomainID\": 4441272,\n    \"DomainName\": \"GFRTEST\",\n    \"DomainAbbreviation\": \"GFRTEST-01\",\n    \"ApiKey\": \"173CCFDA-241B-4F02-BCFF-C607966F093E\"\n  },\n  {\n    \"DomainID\": 4970604,\n    \"DomainName\": \"Sarika Arora\",\n    \"DomainAbbreviation\": \"SPT-32\",\n    \"ApiKey\": \"3C783397-A86F-4AFC-9BF0-B2A7C9E4F60F\"\n  },\n  {\n    \"DomainID\": 6597324,\n    \"DomainName\": \"CBD Testing \",\n    \"DomainAbbreviation\": \"CBD-03\",\n    \"ApiKey\": \"F51D8B1F-7F92-4337-842C-F773D33D6043\"\n  },"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/CustomFieldEnabled",
+    "Input": null,
+    "Output": "{\n  \"IsCustomFieldEnabled\": true,\n  \"CustomFieldName\": \"Release Test@@12\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/UTSearchClientGUID",
+    "Input": "{\n  \"ClientID\": \"BULKFILL\",\n  \"TaxYear\": 2025\n}",
+    "Output": "[\n  {\n    \"ClientGuid\": \"ed3cf4b0-2de7-45f0-bd58-1fbf1147a70f\",\n    \"ClientId\": \"BULKFILL\",\n    \"TaxYear\": 2025,\n    \"DataLocation\": \"<default>\",\n    \"IsPasswordProtected\": false\n  }\n]"
+  },
+  {
+    "Swagger APIs": "post /V7/Lookup/7216ConsentEnabled",
+    "Input": null,
+    "Output": "{\n  \"Is7216ConsentEnabled\": false\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/GetStatus",
+    "Input": "{\n  \"Binder_Id\": 41967142\n}",
+    "Output": "{\n  \"error_code\": \"\",\n  \"error_message\": \"\",\n  \"Date\": \"2026-01-02T03:43:34.82\",\n  \"Id\": 2,\n  \"Name\": \"In Verification\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/Binder/ChangeBinderStatus",
+    "Input": "{\n  \"Binder_Id\": 41957656,\n  \"Status_Id\": 8743\n}",
+    "Output": 200
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/GetStatus",
+    "Input": "{\n  \"Binder_Id\": 41975105\n}",
+    "Output": "{\n  \"error_code\": \"\",\n  \"error_message\": \"\",\n  \"Date\": \"2025-12-30T23:36:22.553\",\n  \"Id\": 3,\n  \"Name\": \"Documents Uploading\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/Binder/ChangeBinderStatus",
+    "Input": "{\n  \"Binder_Id\": 41957656,\n  \"Status_Id\": 8743\n}",
+    "Output": 200
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/CreateClient",
+    "Input": "{\n  \"ClientType\": \"Standard\",\n  \"Owner\": \"karandeepsingh.talwar@thomsonreuters.com\",\n  \"OfficeLocationID\": 20242,\n   \"OfficeLocationRestriction\": true,\n  \"BinderType\": \"1040\",\n  \"Taxpayer\": {\n    \"FirstName\": \"Karan\",\n    \"LastName\": \"Talwar\",\n    \"Email\": \"karandeepsingh.talwar+998@thomsonreuters.com\"\n  },\n  \"TaxSoftware\": {\n    \"SoftwareID\": 4,\n    \"AccountNumber\": \"421038\",\n    \"TaxClientID\": \"2025UT12\",\n  }\n}",
+    "Output": "{\n  \"ErrorCode\": \"0\",\n  \"ErrorDescription\": \"\",\n  \"Response\": {\n    \"ID\": 1643596,\n    \"TaxPayerEmail\": \"karandeepsingh.talwar+998@thomsonreuters.com\",\n    \"TaxPayerFirstName\": \"Karan\",\n    \"TaxPayerLastName\": \"Talwar\",\n    \"TaxPayerPhoneNumberCountryCode\": null,\n    \"TaxPayerPhoneNumber\": null,\n    \"SpouseEmail\": null,\n    \"SpouseFirstName\": null,\n    \"SpouseLastName\": null,\n    \"OwnerEmail\": \"karandeepsingh.talwar@thomsonreuters.com\",\n    \"OwnerFirstName\": \"Karandeep Singh\",\n    \"OwnerLastName\": \"Talwar\",\n    \"FirmID\": 2975,\n    \"FirmName\": \"Onboarding Team RR\",\n    \"BinderType\": \"1040\",\n    \"OfficeLocation\": \"Ann Arbor\",\n    \"Status\": \"Not Invited\",\n    \"TaxSoftwareID\": 4,\n    \"TaxSoftwareAccountNo\": \"421038\",\n    \"TaxClientID\": \"2025UT12\",\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwarePassword\": null,\n    \"TaxSoftwareVersion\": null\n  }\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/CreateDrl",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"BinderType\": \"1040\",\n  \"MergePDF\": true,\n  \"TaxPayers\": [\n    {\n      \"TaxClientID\": \"2025UT12\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": \"0\",\n  \"ErrorDescription\": \"\",\n  \"Response\": [\n    {\n      \"Data\": {\n        \"TaxClientID\": \"2025UT12\",\n        \"DRLRequestID\": 4565533,\n        \"Status\": \"DRL Creation In Queue\"\n      },\n      \"ErrorCode\": \"0\",\n      \"ErrorDescription\": \"\"\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/DownloadDocument",
+    "Input": null,
+    "Output": null
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/GetDRLStatus",
+    "Input": "{\n  \"DRLRequestIDs\": [\n    {\n      \"DRLRequestID\": 4565533\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": \"0\",\n  \"ErrorDescription\": \"\",\n  \"Response\": [\n    {\n      \"DRLRequestID\": 4565533,\n      \"ErrorCode\": \"0\",\n      \"ErrorDescription\": \"\",\n      \"TaxClientID\": \"2025UT12\",\n      \"TaxYear\": 2025,\n      \"TaxSoftwareName\": \"UltraTax CS\",\n      \"DRLStatusID\": 107,\n      \"DRLStatusName\": \"Completed\",\n      \"ClientProfileOwner\": \"KarandeepSingh.Talwar@thomsonreuters.com\",\n      \"ClientProfileStatus\": \"Not Invited\"\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/SendDRL",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"BinderType\": \"1040\",\n  \"TaxPayers\": [\n    {\n      \"TaxClientID\": \"2025UT12\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": \"\",\n  \"Response\": [\n    {\n      \"Data\": {\n        \"TaxClientID\": \"2025UT12\",\n        \"Status\": \"Error\",\n        \"ClientType\": \"Standard\",\n        \"BinderType\": null,\n        \"ReturnName\": null\n      },\n      \"ErrorCode\": \"10064\",\n      \"ErrorDescription\": \"Your firm used all the remaining TaxCaddy (Gather/Deliver) units. Please purchase additional units to avoid disruptions.\"\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/SendQuestionnaire",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"BinderType\": \"1040\",\n  \"TaxPayers\": [\n    {\n      \"TaxClientID\": \"2025UT12\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": []\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/SendTaxCaddyInvitation",
+    "Input": "{\n  \"TaxPayers\": [\n    {\n      \"TaxClientId\": \"R2RRFA\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": [\n    {\n      \"ErrorCode\": 0,\n      \"ErrorDescription\": null,\n      \"Data\": {\n        \"TaxClientId\": \"R2RRFA\",\n        \"ConnectionStatus\": \"NotInvited\",\n        \"ClientType\": \"Dynamic\",\n        \"ReturnType\": \"1040\",\n        \"ReturnName\": \"1040 - Karan Talwar\"\n      }\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/SendTaxCaddyInvitationReminder",
+    "Input": "{\n  \"TaxPayers\": [\n    {\n      \"TaxClientId\": \"R2RRFA\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": [\n    {\n      \"ErrorCode\": 0,\n      \"ErrorDescription\": null,\n      \"Data\": {\n        \"TaxClientId\": \"R2RRFA\",\n        \"ConnectionStatus\": \"NotEnrolled\",\n        \"ClientType\": \"Dynamic\",\n        \"ReturnType\": \"1040\",\n        \"ReturnName\": \"1040 - Karan Talwar\"\n      }\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/GetDRLItems/{TaxYear}",
+    "Input": "{\n  \"TaxClientIds\": [\n    \"2025UT12\"\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": [\n    {\n      \"TaxClientId\": \"2025UT12\",\n      \"SubCategories\": [\n        {\n          \"DRLRequestId\": \"4565533\",\n          \"CategoryName\": \"W-2 (Wages)\",\n          \"SubCategoryName\": \"W-2 DRL1\",\n          \"DRLSubCategoryId\": 36759655\n        },\n        {\n          \"DRLRequestId\": \"4565533\",\n          \"CategoryName\": \"1099s (Banks and Brokerages)\",\n          \"SubCategoryName\": \"1\",\n          \"DRLSubCategoryId\": 36759656\n        }\n      ]\n    }\n  ],\n  \"Id\": 1,\n  \"Value\": \"Success\",\n  \"Error\": \"\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/DeleteDRLItem/{DrlRequestId}",
+    "Input": "{\n  \"DRLSubCategoryId\": [\n    36759656\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": \"DRL Sub Category information deleted successfully\",\n  \"Id\": 1,\n  \"Value\": \"Successfully deleted 1 DRL subcategory item(s). Deleted IDs: 36759656\",\n  \"Error\": \"\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/GetMemberDetails",
+    "Input": "{\n  \"TaxPayerTaxClientID\": [\n    \"2025UT12\"\n  ]\n}",
+    "Output": "{\n  \"Response\": [\n    {\n      \"TaxClientID\": \"2025UT12\",\n      \"AssignedMembersList\": [\n        {\n          \"email\": \"KarandeepSingh.Talwar@thomsonreuters.com\",\n          \"isOwner\": true\n        }\n      ]\n    }\n  ],\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/UpdateMember",
+    "Input": "{\n  \"TaxPayerTaxClientID\": [\n    \"2025UT12\"\n  ],\n  \"AssignMember\": [\n    \"anushka.kadam@thomsonreuters.com\"\n  ]\n}",
+    "Output": "{\n  \"Response\": [\n    {\n      \"TaxClientID\": \"2025UT12\",\n      \"Message\": \"Success\"\n    }\n  ],\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/TaxCaddyDocumentCategories",
+    "Input": "109-Entity Type",
+    "Output": "{\n  \"Response\": {\n    \"Categories\": [\n      {\n        \"Name\": \"W-2 (Wages)\",\n        \"Id\": 1000025,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099s (Banks and Brokerages)\",\n        \"Id\": 1000026,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Sch. C (Business Income)\",\n        \"Id\": 1000027,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099-R (Retirement)\",\n        \"Id\": 1000028,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Sch. E (Rents and Royalties)\",\n        \"Id\": 1000029,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Schedule K-1s\",\n        \"Id\": 1000030,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Sch. F (Farm Income)\",\n        \"Id\": 1000031,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099-SSA (Social Security Benefits)\",\n        \"Id\": 1000032,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099-G (Tax Refund)\",\n        \"Id\": 1000033,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099-MISC (Misc. Income)\",\n        \"Id\": 1000034,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099 NEC (Nonemployee Compensation)\",\n        \"Id\": 1000035,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099-Q (Qualified Education Payments)\",\n        \"Id\": 1000036,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Child Income\",\n        \"Id\": 1000037,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"W-2G (Gambling Winnings)\",\n        \"Id\": 1000038,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Other Gains and Losses\",\n        \"Id\": 1000039,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Settlement Statements\",\n        \"Id\": 1000040,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Form 5498 (IRA Contribution)\",\n        \"Id\": 1000041,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Form 5498 SA (HSA or MSA Contribution)\",\n        \"Id\": 1000042,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Other Adjustments\",\n        \"Id\": 1000043,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Moving Expenses\",\n        \"Id\": 1000044,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Alimony Paid\",\n        \"Id\": 1000045,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Educator Expenses\",\n        \"Id\": 1000046,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099-SA (HSA or MSA)\",\n        \"Id\": 1000047,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1098-E (Student Loan Interest)\",\n        \"Id\": 1000048,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Medical Expenses\",\n        \"Id\": 1000049,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1098s (Home Mortgage Interest)\",\n        \"Id\": 1000050,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Other Interest Expenses\",\n        \"Id\": 1000051,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Home Mortgage not on Form 1098\",\n        \"Id\": 1000052,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Real Estate Taxes\",\n        \"Id\": 1000053,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"DMV Fees and Taxes\",\n        \"Id\": 1000054,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Charitable Contributions\",\n        \"Id\": 1000055,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Non-Cash Contributions\",\n        \"Id\": 1000056,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Personal Business Expenses\",\n        \"Id\": 1000057,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Other Deductible Expenses\",\n        \"Id\": 1000058,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Vehicle Expenses\",\n        \"Id\": 1000059,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Business Use of Home\",\n        \"Id\": 1000060,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Other Taxes\",\n        \"Id\": 1000061,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"W-2 (Household Employee)\",\n        \"Id\": 1000062,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1095-A (Health Insurance)\",\n        \"Id\": 1000063,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1095-B (Health Coverage)\",\n        \"Id\": 1000064,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1095-C (Employer-Provided Health Coverage)\",\n        \"Id\": 1000065,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Other Credits\",\n        \"Id\": 1000066,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Child Care Expenses\",\n        \"Id\": 1000067,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1098-T (Education Credits)\",\n        \"Id\": 1000068,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Credit for Sick and Family Leave\",\n        \"Id\": 1000069,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Tax Payments\",\n        \"Id\": 1000070,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Foreign Information\",\n        \"Id\": 1000071,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Foreign Earned Income\",\n        \"Id\": 1000072,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Foreign Financial Assets\",\n        \"Id\": 1000073,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Foreign Bank and Financial Accounts\",\n        \"Id\": 1000074,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Passive Foreign Investment Company\",\n        \"Id\": 1000075,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Foreign Disregarded Entities\",\n        \"Id\": 1000076,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"State Information\",\n        \"Id\": 1000077,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Prior Year\",\n        \"Id\": 1000078,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Letters\",\n        \"Id\": 1000079,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"IRS Notices\",\n        \"Id\": 1000080,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Other\",\n        \"Id\": 1000081,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Questionnaire\",\n        \"Id\": 1000082,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Messages\",\n        \"Id\": 1000083,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Personal Information\",\n        \"Id\": 1000084,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      }\n    ],\n    \"ErrorCode\": 0,\n    \"ErrorDescription\": null,\n    \"TotalRecords\": 0,\n    \"CurrentPage\": 0,\n    \"PageSize\": 0,\n    \"Response\": null\n  },\n  \"Id\": 1,\n  \"Value\": \"Success\",\n  \"Error\": \"\",\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V5.0/TaxCaddyAPI/SendDocumentUploadRequest",
+    "Input": "{\n  \"TaxClientId\": \"2025UT12\",\n  \"TaxYear\": 2025,\n  \"DocumentUploadRequests\": [\n    {\n      \"CategoryId\": 1000025,\n      \"SubCategoryName\": \"Test\"\n    }\n  ]\n}",
+    "Output": "{\n  \"Response\": {\n    \"DetailedResults\": [],\n    \"TotalRequests\": 0,\n    \"SuccessfulRequests\": 0,\n    \"FailedRequests\": 0,\n    \"ErrorCode\": 150121,\n    \"ErrorDescription\": \"User does not have permission to send TaxCaddy Document Upload Request due to Office Location restriction\"\n  },\n  \"Id\": -2,\n  \"Value\": \"\",\n  \"Error\": \"ValidationFailed\",\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/CreateClient",
+    "Input": "{\n  \"ClientType\": \"Standard\",\n  \"Owner\": \"prakash.kokate@thomsonreuters.com\",\n  \"OfficeLocationID\": 20242,\n   \"OfficeLocationRestriction\": true,\n  \"BinderType\": \"1040\",\n  \"Taxpayer\": {\n    \"FirstName\": \"Karan\",\n    \"LastName\": \"Talwar\",\n    \"Email\": \"prakash.kokate+889@thomsonreuters.com\"\n  },\n  \"TaxSoftware\": {\n    \"SoftwareID\": 4,\n    \"AccountNumber\": \"421038\",\n    \"TaxClientID\": \"25UTPK11\",\n  },\n  \"ProjectID\": \"R2R1\",\n  \"SSN\": \"185225181\",\n  \"UtClientGuid\": \"A76E38B5-86F5-4051-AC25-B88246C3CDC4\"\n}",
+    "Output": "{\n  \"ErrorCode\": \"0\",\n  \"ErrorDescription\": \"\",\n  \"Response\": {\n    \"ID\": 1643604,\n    \"TaxPayerEmail\": \"prakash.kokate+889@thomsonreuters.com\",\n    \"TaxPayerFirstName\": \"Karan\",\n    \"TaxPayerLastName\": \"Talwar\",\n    \"TaxPayerPhoneNumberCountryCode\": null,\n    \"TaxPayerPhoneNumber\": null,\n    \"SpouseEmail\": null,\n    \"SpouseFirstName\": null,\n    \"SpouseLastName\": null,\n    \"OwnerEmail\": \"prakash.kokate@thomsonreuters.com\",\n    \"OwnerFirstName\": \"Prakash\",\n    \"OwnerLastName\": \"Kokate\",\n    \"FirmID\": 2975,\n    \"FirmName\": \"Onboarding Team RR\",\n    \"BinderType\": \"1040\",\n    \"OfficeLocation\": \"Ann Arbor\",\n    \"Status\": \"Not Invited\",\n    \"TaxSoftwareID\": 4,\n    \"TaxSoftwareAccountNo\": \"421038\",\n    \"TaxClientID\": \"25UTPK11\",\n    \"TaxSoftware\": \"UltraTax CS\",\n    \"TaxSoftwarePassword\": null,\n    \"TaxSoftwareVersion\": null,\n    \"ProjectID\": \"R2R1\"\n  }\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/CreateDrl",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"BinderType\": \"1040\",\n  \"MergePDF\": true,\n  \"TaxPayers\": [\n    {\n      \"TaxClientID\": \"2025UT11\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": \"0\",\n  \"ErrorDescription\": \"\",\n  \"Response\": [\n    {\n      \"Data\": {\n        \"TaxClientID\": \"2025UT11\",\n        \"DRLRequestID\": 4565570,\n        \"Status\": \"DRL Creation In Queue\"\n      },\n      \"ErrorCode\": \"0\",\n      \"ErrorDescription\": \"\"\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/GetDRLStatus",
+    "Input": "{\n  \"DRLRequestIDs\": [\n    {\n      \"DRLRequestID\": 4565570\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": \"0\",\n  \"ErrorDescription\": \"\",\n  \"Response\": [\n    {\n      \"DRLRequestID\": 4565570,\n      \"ErrorCode\": \"0\",\n      \"ErrorDescription\": \"\",\n      \"TaxClientID\": \"2025UT11\",\n      \"TaxYear\": 2025,\n      \"TaxSoftwareName\": \"UltraTax CS\",\n      \"DRLStatusID\": 107,\n      \"DRLStatusName\": \"Completed\",\n      \"ClientProfileOwner\": \"tr.karandeepsingh.talwar+421038@outlook.com\",\n      \"ClientProfileStatus\": \"Not Invited\"\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/SendDRL",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"BinderType\": \"1040\",\n  \"TaxPayers\": [\n    {\n      \"TaxClientID\": \"2025UT11\"\n    }\n  ]\n}",
+    "Output": "  \"ErrorCode\": 0,\n  \"ErrorDescription\": \"\",\n  \"Response\": [\n    {\n      \"Data\": {\n        \"TaxClientID\": \"2025UT11\",\n        \"Status\": \"Not Eligible\",\n        \"ClientType\": \"Standard\",\n        \"BinderType\": null,\n        \"ReturnName\": null\n      },\n      \"ErrorCode\": \"10054\",\n      \"ErrorDescription\": \"Unable to send DRL because the request is already in Sent status.\"\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/SendQuestionnaire",
+    "Input": "{\n  \"TaxYear\": 2025,\n  \"BinderType\": \"1040\",\n  \"TaxPayers\": [\n    {\n      \"TaxClientID\": \"2025UT11\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": [\n    {\n      \"Data\": {\n        \"TaxClientID\": \"2025UT11\",\n        \"Status\": \"Template sent successfully\",\n        \"ClientType\": \"Standard\",\n        \"BinderType\": \"1040\",\n        \"ReturnName\": \"2025UT11 2025UT11 1040\"\n      },\n      \"ErrorCode\": \"0\",\n      \"ErrorDescription\": \"\"\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/SendTaxCaddyInvitation",
+    "Input": "{\n  \"TaxPayers\": [\n    {\n      \"TaxClientId\": \"2025UT11\"\n    }\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": [\n    {\n      \"ErrorCode\": 0,\n      \"ErrorDescription\": null,\n      \"Data\": {\n        \"TaxClientId\": \"2025UT11\",\n        \"ConnectionStatus\": \"NotInvited\",\n        \"ClientType\": \"Dynamic\",\n        \"ReturnType\": \"1040\",\n        \"ReturnName\": \"1040 - 2025UT11 2025UT11\"\n      }\n    }\n  ]\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/SendTaxCaddyInvitationReminder",
+    "Input": "{\n  \"TaxPayers\": [\n    {\n      \"TaxClientId\": \"2025UT11\"\n    }\n  ]\n}",
+    "Output": "{ \"ErrorCode\": 0, \"ErrorDescription\": null, \"Response\": [ { \"ErrorCode\": 0, \"ErrorDescription\": null, \"Data\": { \"TaxClientId\": \"2025UT11\", \"ConnectionStatus\": \"NotEnrolled\", \"ClientType\": \"Dynamic\", \"ReturnType\": \"1040\", \"ReturnName\": \"1040 - 2025UT11 2025UT11\" } } ] }"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/GetDRLItems/{TaxYear}",
+    "Input": "{\n  \"TaxClientIds\": [\n    \"2025UT12\"\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": [\n    {\n      \"TaxClientId\": \"2025UT12\",\n      \"SubCategories\": [\n        {\n          \"DRLRequestId\": \"4565533\",\n          \"CategoryName\": \"W-2 (Wages)\",\n          \"SubCategoryName\": \"W-2 DRL1\",\n          \"DRLSubCategoryId\": 36759655\n        }\n      ]\n    }\n  ],\n  \"Id\": 1,\n  \"Value\": \"Success\",\n  \"Error\": \"\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/DeleteDRLItem/{DrlRequestId}",
+    "Input": "{\n  \"DRLSubCategoryId\": [\n    36759655\n  ]\n}",
+    "Output": "{\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null,\n  \"Response\": \"DRL Sub Category information deleted successfully\",\n  \"Id\": 1,\n  \"Value\": \"Successfully deleted 1 DRL subcategory item(s). Deleted IDs: 36759655\",\n  \"Error\": \"\"\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/GetMemberDetails",
+    "Input": "{\n  \"TaxPayerTaxClientID\": [\n    \"2025UT11\"\n  ]\n}",
+    "Output": "{\n  \"Response\": [\n    {\n      \"TaxClientID\": \"2025UT11\",\n      \"AssignedMembersList\": [\n        {\n          \"email\": \"tr.karandeepsingh.talwar+421038@outlook.com\",\n          \"isOwner\": true\n        }\n      ]\n    }\n  ],\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/UpdateMember",
+    "Input": "{\n  \"TaxPayerTaxClientID\": [\n    \"2025UT11\"\n  ],\n  \"AssignMember\": [\n    \"anushka.kadam@thomsonreuters.com\"\n  ]\n}",
+    "Output": "{\n  \"Response\": [\n    {\n      \"TaxClientID\": \"2025UT11\",\n      \"Message\": \"Success\"\n    }\n  ],\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/TaxCaddyDocumentCategories",
+    "Input": "109-Entity Type",
+    "Output": "{\n  \"Response\": {\n    \"Categories\": [\n      {\n        \"Name\": \"W-2 (Wages)\",\n        \"Id\": 1000025,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099s (Banks and Brokerages)\",\n        \"Id\": 1000026,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Sch. C (Business Income)\",\n        \"Id\": 1000027,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"1099-R (Retirement)\",\n        \"Id\": 1000028,\n        \"IsFillable\": false,\n        \"IsCustom\": false\n      },\n      {\n        \"Name\": \"Sch. E (Rents and Royalties)\",\n        \"Id\": 1000029,\n        \"IsFillable\": true,\n        \"IsCustom\": false\n      },"
+  },
+  {
+    "Swagger APIs": "post /V7/TaxCaddyAPI/SendDocumentUploadRequest",
+    "Input": "{\n  \"TaxClientId\": \"2025UT11\",\n  \"TaxYear\": 2025,\n  \"DocumentUploadRequests\": [\n    {\n      \"CategoryId\": 1000027,\n      \"SubCategoryName\": \"Test\"\n    }\n  ]\n}",
+    "Output": "{\n  \"Response\": {\n    \"DetailedResults\": [\n      {\n        \"CategoryId\": 1000027,\n        \"SubCategoryName\": \"Test\",\n        \"IsFillable\": true,\n        \"ErrorDescription\": null,\n        \"ErrorCode\": 0,\n        \"SubCategoryId\": 1083176406\n      }\n    ],\n    \"TotalRequests\": 1,\n    \"SuccessfulRequests\": 1,\n    \"FailedRequests\": 0,\n    \"ErrorCode\": 0,\n    \"ErrorDescription\": null\n  },\n  \"Id\": 1,\n  \"Value\": \"Processed 1 items: 1 successful, 0 failed.\",\n  \"Error\": \"\",\n  \"ErrorCode\": 0,\n  \"ErrorDescription\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/RWAPI2.0/LaunchReviewWizard",
+    "Input": "{\n  \"Email\": \"Priyanka.patil@thomsonreuters.com\",\n  \"BinderID\": 41967196\n}",
+    "Output": "{\n  \"URL\": \"https://rw.sureprep.com/?engagementId=41967196&token=12655283~~~575515da-b585-4269-a3a7-841495352375\",\n  \"ErrorCode\": null,\n  \"ErrorDesc\": null\n}"
+  },
+  {
+    "Swagger APIs": "post /V7/UTIntegration/TaxFileMergedStatus",
+    "Input": "{\n  \"FirmId\": \"string\",\n  \"UTClientGuid\": \"string\",\n  \"TaxClientId\": \"BULKFILL\",\n  \"TaxYear\": 2025\n}",
+    "Output": "\"Success\""
+  },
+  {
+    "Swagger APIs": "post /V7/UTIntegration/SPConnect",
+    "Input": "{\n  \"IsConnected\": true\n}",
+    "Output": "\"Success\""
+  }
+]

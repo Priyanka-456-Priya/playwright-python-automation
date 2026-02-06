@@ -1,0 +1,11 @@
+{
+  "endpoint": "/V7/Binder/UpdateProjectID",
+  "method": "POST",
+  "payload": {
+    "BinderID": 41975105,
+    "ProjectID": "TESTFGH",
+    "ClientId": "DRLTEST",
+    "BinderType": "1040",
+    "TaxYear": 2025
+  }
+}

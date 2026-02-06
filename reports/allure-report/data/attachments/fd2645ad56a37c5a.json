@@ -1,0 +1,8 @@
+{
+  "endpoint": "/V5.0/Binder/ChangeBinderStatus",
+  "method": "POST",
+  "payload": {
+    "Binder_Id": 41957656,
+    "Status_Id": 8743
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "binder-api-test-automation",
+  "version": "1.0.0",
+  "description": "API test automation for Binder APIs using Axios and Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"tests/*.test.js\" --timeout 10000 --exit",
+    "test:single": "mocha tests/binderApi.test.js --timeout 10000 --exit",
+    "test:verbose": "mocha \"tests/*.test.js\" --timeout 10000 --reporter spec --exit",
+    "test:watch": "mocha \"tests/*.test.js\" --timeout 10000 --watch",
+    "test:auth": "mocha tests/binderApi.test.js --timeout 10000 --grep 'Authentication' --exit",
+    "test:create": "mocha tests/binderApi.test.js --timeout 10000 --grep 'Create Binder' --exit",
+    "test:integration": "mocha tests/binderApi.test.js --timeout 30000 --grep 'Integration' --exit"
+  },
+  "keywords": [
+    "api",
+    "testing",
+    "automation",
+    "axios",
+    "page-object-model",
+    "mocha",
+    "chai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.10",
+    "mochawesome": "^7.1.3"
+  }
+}

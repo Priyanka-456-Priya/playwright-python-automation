@@ -1,0 +1,14 @@
+{
+  "endpoint": "/V7/BinderInfo/GetBinderDetails",
+  "method": "POST",
+  "payload": {
+    "TaxYear": 2025,
+    "ClientID": [
+      "BULKFILL"
+    ],
+    "PageNumber": 1,
+    "PageSize": 10,
+    "BinderType": "1040",
+    "OwnerEmail": "Priyanka.patil@thomsonreuters.com"
+  }
+}

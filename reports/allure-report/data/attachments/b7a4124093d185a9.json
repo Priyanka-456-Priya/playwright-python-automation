@@ -1,0 +1,10 @@
+{
+  "endpoint": "/V5.0/BinderInfo/GetTaxCaddyDocumentsCount",
+  "method": "POST",
+  "payload": {
+    "TaxYear": 2025,
+    "ClientID": [
+      "5406XO_LIV"
+    ]
+  }
+}

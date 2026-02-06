@@ -1,0 +1,21 @@
+{
+  "endpoint": "/V5.0/Binder/CreateBinder",
+  "method": "POST",
+  "payload": {
+    "AccountNumber": "421038",
+    "Custom_Field": "ADGTEST",
+    "Email": "priyanka.patil@thomsonreuters.com",
+    "Unique_Identifier": "B611C44C-7058-4F5C-A789-5F5A9E597BC7",
+    "Service_Type_Id": 2,
+    "Template_Id": 41947079,
+    "Has_Leadsheet": 1,
+    "SubmissionType": 1,
+    "Is7216ConsentReceived": 1,
+    "Client_Id": "ABCDRT",
+    "Locator_No": "ABCDRT",
+    "LinkBinder": "0",
+    "Filing_Status": "1",
+    "Taxpayer_SSN": "147852369",
+    "Office_Location_Id": 20242
+  }
+}

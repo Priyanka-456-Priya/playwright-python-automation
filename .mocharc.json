@@ -1,0 +1,9 @@
+{
+  "spec": ["tests/*.test.js"],
+  "ignore": ["tests/**/*.py", "tests/__pycache__/**"],
+  "timeout": 10000,
+  "color": true,
+  "reporter": "spec",
+  "recursive": false,
+  "exit": true
+}
