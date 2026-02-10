@@ -9,7 +9,7 @@ import requests
 import json
 from datetime import datetime
 import os
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 import allure
 
 
@@ -24,11 +24,11 @@ class TestConfig:
 
     # V7 Credentials
     V7_CLIENT_ID = os.getenv('SUREPREP_V7_CLIENT_ID', 'xfO08U5uScAnOISU76C9EOi68XYFfIuR')
-    V7_CLIENT_SECRET = os.getenv('SUREPREP_V7_CLIENT_SECRET', '0YouHK5_NSkBCJBhPdf2LpgI7Boml16KY8EsHjG8fclmoKv0Q29xo1q-GAaARITk')
+    V7_CLIENT_SECRET = os.getenv('SUREPREP_V7_CLIENT_SECRET', '-F5UiqbA-MAdig2CY0evsf130324bAxieh62tFaVccAZu4sl5c3Aih9n5KuDcLU2')
 
     TIMEOUT = 30
-    AUTH_TOKEN_V5 = None
-    AUTH_TOKEN_V7 = None
+    AUTH_TOKEN_V5: Optional[str] = None
+    AUTH_TOKEN_V7: Optional[str] = None
 
 
 class BaseAPITest:
@@ -63,7 +63,7 @@ class BaseAPITest:
             return {}
 
     def get_auth_token_v5(self) -> str:
-        """Get authentication token from V5.0 API"""
+        """Get authentication token from V5.0 API with retry logic"""
         auth_url = f"{TestConfig.BASE_URL}/V5.0/Authenticate/GetToken"
         endpoint = "/V5.0/Authenticate/GetToken"
         payload = {
@@ -71,40 +71,91 @@ class BaseAPITest:
             "Password": TestConfig.V5_PASSWORD,
             "APIKey": TestConfig.V5_API_KEY
         }
-        try:
-            response = requests.post(auth_url, json=payload, timeout=TestConfig.TIMEOUT)
-            if response.status_code == 200:
-                token = response.json().get('Token', '')
-                print(f"V5 Token obtained: {token[:20]}..." if token else "V5 Token is empty")
-                return token
-            else:
-                print(f"V5 Authentication failed with status: {response.status_code}")
-        except Exception as e:
-            print(f"V5 Authentication exception: {str(e)}")
+
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(auth_url, json=payload, timeout=TestConfig.TIMEOUT)
+                if response.status_code == 200:
+                    token = response.json().get('Token', '')
+                    if token:
+                        print(f"✓ V5 Token obtained: {token[:20]}...")
+                        return token
+                    else:
+                        print(f"⚠ V5 Token is empty in response. Attempt {attempt + 1}/{max_retries}")
+                else:
+                    print(f"⚠ V5 Authentication failed with status: {response.status_code}. Attempt {attempt + 1}/{max_retries}")
+                    print(f"  Response: {response.text[:200]}")
+            except Exception as e:
+                print(f"⚠ V5 Authentication exception: {str(e)}. Attempt {attempt + 1}/{max_retries}")
+
+            if attempt < max_retries - 1:
+                import time
+                time.sleep(1)  # Wait before retry
+
+        print("✗ V5 Token retrieval failed after all retries")
         return ""
 
     def get_auth_token_v7(self) -> str:
-        """Get authentication token from V7 API"""
+        """Get authentication token from V7 API with retry logic"""
         auth_url = f"{TestConfig.BASE_URL}/V7/Authenticate/GetToken"
         endpoint = "/V7/Authenticate/GetToken"
         payload = {
             "ClientID": TestConfig.V7_CLIENT_ID,
             "ClientSecret": TestConfig.V7_CLIENT_SECRET
         }
-        try:
-            response = requests.post(auth_url, json=payload, timeout=TestConfig.TIMEOUT)
-            if response.status_code == 200:
-                return response.json().get('Token', '')
-        except Exception as e:
-            print(f"V7 Authentication failed: {str(e)}")
+
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(auth_url, json=payload, timeout=TestConfig.TIMEOUT)
+                if response.status_code == 200:
+                    token = response.json().get('Token', '')
+                    if token:
+                        print(f"✓ V7 Token obtained: {token[:20]}...")
+                        return token
+                    else:
+                        print(f"⚠ V7 Token is empty in response. Attempt {attempt + 1}/{max_retries}")
+                else:
+                    print(f"⚠ V7 Authentication failed with status: {response.status_code}. Attempt {attempt + 1}/{max_retries}")
+                    print(f"  Response: {response.text[:200]}")
+            except Exception as e:
+                print(f"⚠ V7 Authentication exception: {str(e)}. Attempt {attempt + 1}/{max_retries}")
+
+            if attempt < max_retries - 1:
+                import time
+                time.sleep(1)  # Wait before retry
+
+        print("✗ V7 Token retrieval failed after all retries")
         return ""
 
     def get_headers(self, api_version: str = "v7") -> Dict[str, str]:
-        """Get common headers for API requests"""
+        """Get common headers for API requests with token validation"""
         token = self.token_v5 if api_version == "v5" else self.token
+
+        # Validate token exists
+        if not token:
+            print(f"⚠ Warning: {api_version.upper()} token is empty or missing!")
+            print(f"  Attempting to retrieve fresh token...")
+
+            # Try to refresh token
+            if api_version == "v5":
+                token = self.get_auth_token_v5()
+                self.token_v5 = token
+                TestConfig.AUTH_TOKEN_V5 = token
+            else:
+                token = self.get_auth_token_v7()
+                self.token = token
+                TestConfig.AUTH_TOKEN_V7 = token
+
+            if token:
+                print(f"✓ Fresh {api_version.upper()} token obtained")
+            else:
+                print(f"✗ Failed to obtain {api_version.upper()} token")
+
         return {
             'Content-Type': 'application/json',
-            'Authorization': f'Bearer {token}'
+            'Authorization': f'Bearer {token}' if token else ''
         }
 
     def make_request(self, method: str, url: str, payload: Dict = None,
