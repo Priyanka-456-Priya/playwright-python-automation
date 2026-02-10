@@ -1,0 +1,53 @@
+[
+  {
+    "BinderID": 41963500,
+    "DocumentName": "Bookmarks only 2050 DreamWorkpapers - 2025(I) - john, 123-45-6789_Force-23.12.25_41963500_V02.pdf",
+    "DocumentID": "3D9FCB51-4EFD-4C2B-AFFC-5984B385DCA1",
+    "TaxYear": 2025,
+    "DocumentType": "DreamWorkpapers",
+    "Version": "V2",
+    "Size": 292264,
+    "UniqueID": "c0b2e667-9bcf-4903-a9d3-a0e16517c0ea",
+    "EngagementType": "1040",
+    "Owner": "Priyanka, Patil",
+    "OwnerEmail": "Priyanka.Patil@thomsonreuters.com",
+    "CreatedDate": "2025-12-30T23:12:42.477",
+    "ClientID": "Force-23.12.25",
+    "ClientName": "smith, john",
+    "CustomField": "dev"
+  },
+  {
+    "BinderID": 41963500,
+    "DocumentName": "2055 DreamWorkpapers - 2025(I) - john, 123-45-6789_Force-23.12.25_41963500_V02.xlsx",
+    "DocumentID": "3666B71B-8382-4A9F-93B9-E838724BAD68",
+    "TaxYear": 2025,
+    "DocumentType": "DreamWorkpapers",
+    "Version": "V2",
+    "Size": 3217414,
+    "UniqueID": "c0b2e667-9bcf-4903-a9d3-a0e16517c0ea",
+    "EngagementType": "1040",
+    "Owner": "Priyanka, Patil",
+    "OwnerEmail": "Priyanka.Patil@thomsonreuters.com",
+    "CreatedDate": "2025-12-30T23:12:41.62",
+    "ClientID": "Force-23.12.25",
+    "ClientName": "smith, john",
+    "CustomField": "dev"
+  },
+  {
+    "BinderID": 41963500,
+    "DocumentName": "2050 DreamWorkpapers - 2025(I) - john, 123-45-6789_Force-23.12.25_41963500_V02.pdf",
+    "DocumentID": "5F93F129-4647-4781-A85B-33BEFA5B9915",
+    "TaxYear": 2025,
+    "DocumentType": "DreamWorkpapers",
+    "Version": "V2",
+    "Size": 1576196,
+    "UniqueID": "c0b2e667-9bcf-4903-a9d3-a0e16517c0ea",
+    "EngagementType": "1040",
+    "Owner": "Priyanka, Patil",
+    "OwnerEmail": "Priyanka.Patil@thomsonreuters.com",
+    "CreatedDate": "2025-12-30T23:12:37.087",
+    "ClientID": "Force-23.12.25",
+    "ClientName": "smith, john",
+    "CustomField": "dev"
+  }
+]

@@ -1,0 +1,5 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.sureprep.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.sureprep.com:443 "POST /V7/Binder/GetPBFx/41968512 HTTP/1.1" 200 3396
+DEBUG    charset_normalizer:api.py:462 Encoding detection: ascii is most likely the one.
+DEBUG    charset_normalizer:api.py:462 Encoding detection: ascii is most likely the one.
+DEBUG    charset_normalizer:api.py:462 Encoding detection: ascii is most likely the one.

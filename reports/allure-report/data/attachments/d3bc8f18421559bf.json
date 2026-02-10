@@ -1,0 +1,32 @@
+{
+  "UniqueIdentifier": "B611C44C-7058-4F5C-A789-5F5A9E597BC7",
+  "ClientID": "ABCDRT",
+  "TaxYear": 2025,
+  "ClientName": "",
+  "BinderID": 41968512,
+  "TaxClientID": "ABCDRT",
+  "Status": "In Error",
+  "Service": "1040SCAN PRO",
+  "BinderType": "1040",
+  "Owner": "Priyanka Patil",
+  "OfficeLocation": "Ann Arbor",
+  "SubmitedOn": "2025-12-25T22:55:21",
+  "ModifiedOn": "2025-12-25T22:55:20",
+  "EngagementCode": "ABCDRT",
+  "ErrorCode": null,
+  "ErrorMessage": null,
+  "TaxSoftware": "UltraTax CS",
+  "Leadsheets": "Classic Leadsheets",
+  "ActualHours": "",
+  "AssignedMembersList": [
+    "anushka.kadam@thomsonreuters.com"
+  ],
+  "Expedite": "NA",
+  "DueDate": null,
+  "Pages": 0,
+  "DownloadedOn": null,
+  "Is7216ConsentReceived": "NA",
+  "FirmID": "OnboardingRR-01",
+  "OwnerEmail": "Priyanka.Patil@thomsonreuters.com",
+  "IsTCLinkBinder": "No"
+}

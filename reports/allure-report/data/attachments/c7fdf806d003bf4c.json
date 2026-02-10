@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "Name": "GoSystem Tax RS"
+  },
+  {
+    "Id": 7,
+    "Name": "CCH Axcess Tax"
+  },
+  {
+    "Id": 2,
+    "Name": "Lacerte"
+  },
+  {
+    "Id": 4,
+    "Name": "UltraTax CS"
+  },
+  {
+    "Id": 9,
+    "Name": "UltraTax CS (Virtual Office CS or SaaS)"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "LoginUserName": "DHANSHREE",
+    "OwnerName": "DHANSHREE",
+    "SourceIP": "10.2.102.250",
+    "Event": "Access Binder",
+    "BinderID": "41963500",
+    "EventDescription": "DHANSHREE has successfully accessed the binder. Binder's PBFX file was launched within 60 secs after the download completed.",
+    "EventTime": "12/22/2025 10:49:28 PM",
+    "EventStatus": "Success",
+    "LoginURL": "https://binderservicesproduction.sureprep.com/"
+  },
+  {
+    "LoginUserName": "DHANSHREE",
+    "OwnerName": "PPATIL",
+    "SourceIP": "",
+    "Event": "Add Documents",
+    "BinderID": "41963500",
+    "EventDescription": "DHANSHREE has added documents to the binder successfully. (ClientID: Force-23.12.25)",
+    "EventTime": "12/22/2025 10:46:15 PM",
+    "EventStatus": "Success",
+    "LoginURL": ""
+  }
+]

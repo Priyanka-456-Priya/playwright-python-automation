@@ -1,0 +1,34 @@
+[
+  {
+    "UniqueIdentifier": "ed3cf4b0-2de7-45f0-bd58-1fbf1147a70f",
+    "ClientID": "BULKFILL",
+    "TaxYear": 2025,
+    "ClientName": "",
+    "BinderID": 41957446,
+    "TaxClientID": "BULKFILL",
+    "Status": "In Error",
+    "Service": "1040SCAN PRO",
+    "BinderType": "1040",
+    "Owner": "Priyanka Patil",
+    "OfficeLocation": "Ann Arbor",
+    "SubmitedOn": "2025-12-20T23:23:14",
+    "ModifiedOn": "2025-12-20T23:23:20",
+    "EngagementCode": "TESTTT",
+    "ErrorCode": null,
+    "ErrorMessage": null,
+    "TaxSoftware": "UltraTax CS",
+    "Leadsheets": "Classic Leadsheets",
+    "ActualHours": "",
+    "AssignedMembersList": [
+      ""
+    ],
+    "Expedite": "NA",
+    "DueDate": null,
+    "Pages": 0,
+    "DownloadedOn": null,
+    "Is7216ConsentReceived": "Yes",
+    "FirmID": "OnboardingRR-01",
+    "OwnerEmail": "Priyanka.Patil@thomsonreuters.com",
+    "IsTCLinkBinder": "Yes"
+  }
+]

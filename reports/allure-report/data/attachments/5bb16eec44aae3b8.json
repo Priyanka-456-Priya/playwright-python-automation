@@ -1,0 +1,134 @@
+{
+  "BinderDetails": [
+    {
+      "ClientID": "2025UT7",
+      "TaxYear": 2025,
+      "ClientName": "Anderson, John",
+      "BinderID": 41957548,
+      "TaxClientID": "2025UT7",
+      "Status": "",
+      "Service": "1040SCAN PRO",
+      "BinderType": "1040",
+      "Owner": "Karandeep singh Talwar",
+      "OfficeLocation": "Ann Arbor",
+      "SubmitedOn": "2025-12-20T23:56:56",
+      "ModifiedOn": "2026-01-02T02:24:38",
+      "EngagementCode": "Test",
+      "ErrorCode": null,
+      "ErrorMessage": null,
+      "TaxSoftware": "UltraTax CS",
+      "Leadsheets": "None",
+      "ActualHours": "",
+      "AssignedMembersList": [
+        ""
+      ],
+      "Expedite": "NA",
+      "DueDate": null,
+      "Pages": 1,
+      "DownloadedOn": null,
+      "Is7216ConsentReceived": "Yes",
+      "FirmID": null,
+      "OwnerEmail": null,
+      "IsTCLinkBinder": "No"
+    }
+  ],
+  "UnclearedNotes": [
+    {
+      "ClientID": "2025UT7",
+      "NoteType": "General",
+      "ResultCount": 0,
+      "TotalCount": 0,
+      "ErrorCode": null,
+      "ErrorMessage": null
+    },
+    {
+      "ClientID": "2025UT7",
+      "NoteType": "Missing Item",
+      "ResultCount": 0,
+      "TotalCount": 0,
+      "ErrorCode": null,
+      "ErrorMessage": null
+    },
+    {
+      "ClientID": "2025UT7",
+      "NoteType": "Permanent",
+      "ResultCount": 0,
+      "TotalCount": 0,
+      "ErrorCode": null,
+      "ErrorMessage": null
+    },
+    {
+      "ClientID": "2025UT7",
+      "NoteType": "Review",
+      "ResultCount": 0,
+      "TotalCount": 0,
+      "ErrorCode": null,
+      "ErrorMessage": null
+    },
+    {
+      "ClientID": "2025UT7",
+      "NoteType": "Custom",
+      "ResultCount": 0,
+      "TotalCount": 0,
+      "ErrorCode": null,
+      "ErrorMessage": null
+    }
+  ],
+  "UnReviewdTRStamps": [
+    {
+      "ClientID": "2025UT7",
+      "ResultCount": 2,
+      "ErrorCode": null,
+      "ErrorMessage": null,
+      "TotalCount": 18
+    }
+  ],
+  "UnReviewdStickyNotes": [
+    {
+      "ClientID": "2025UT7",
+      "ResultCount": 1,
+      "ErrorCode": null,
+      "ErrorMessage": null,
+      "TotalCount": 1
+    }
+  ],
+  "UnReviewdWorkPapersbyL1": [
+    {
+      "ClientID": "2025UT7",
+      "ResultCount": 1,
+      "ErrorCode": null,
+      "ErrorMessage": null,
+      "TotalCount": 1
+    }
+  ],
+  "UnReviewdWorkPapersbyL2": [
+    {
+      "ClientID": "2025UT7",
+      "ResultCount": 1,
+      "ErrorCode": null,
+      "ErrorMessage": null,
+      "TotalCount": 1
+    }
+  ],
+  "UnReviewdWorkPapersbyL3": [
+    {
+      "ClientID": "2025UT7",
+      "ResultCount": 1,
+      "ErrorCode": null,
+      "ErrorMessage": null,
+      "TotalCount": 1
+    }
+  ],
+  "UnReviewdWorkPapersbyL4": [
+    {
+      "ClientID": "2025UT7",
+      "ResultCount": 1,
+      "ErrorCode": null,
+      "ErrorMessage": null,
+      "TotalCount": 1
+    }
+  ],
+  "RequestedDocumentPendingReview": [],
+  "RequestedDocumentPendingSignature": [],
+  "RequestedDocumentPendingUpload": []
+}

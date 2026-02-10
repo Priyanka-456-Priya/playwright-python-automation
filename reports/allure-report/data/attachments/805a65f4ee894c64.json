@@ -1,0 +1,93 @@
+[
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "1098s (Home Mortgage Interest)",
+    "DRLItemName": "1098s (Home Mortgage Interest)",
+    "DRLCategoryId": 7754,
+    "DocumentId": "c4e54555-dc5c-480a-8e51-df03d0e1f303"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Charitable Contributions",
+    "DRLItemName": "Charitable Contributions",
+    "DRLCategoryId": 7751,
+    "DocumentId": "497739d1-8e64-45bf-9bfa-a526046438ab"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "DMV Fees and Taxes",
+    "DRLItemName": "DMV Fees and Taxes",
+    "DRLCategoryId": 7755,
+    "DocumentId": "e18ac376-69af-4df6-8ff2-e9b0ce3396e0"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Sch. C (Business Income)",
+    "DRLItemName": "HANDICRAFTS (Joint)",
+    "DRLCategoryId": 7559,
+    "DocumentId": "fbfecf19-05ee-4e9b-9030-17ef9a5472c4"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Sch. E (Rents and Royalties)",
+    "DRLItemName": "MAKWANA ROAD (Spouse)",
+    "DRLCategoryId": 7589,
+    "DocumentId": "e5a017b2-2115-40b0-bd91-3d8079fc3b57"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Medical Expenses",
+    "DRLItemName": "Medical Expenses",
+    "DRLCategoryId": 7752,
+    "DocumentId": "d9d4e0a8-a0a5-4fc9-a7a0-5ab948663357"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Non-Cash Contributions",
+    "DRLItemName": "Non-Cash Contributions",
+    "DRLCategoryId": 7750,
+    "DocumentId": "6dabf3e5-0860-4d7f-b6f2-c1764f988492"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Other Interest Expenses",
+    "DRLItemName": "Other Interest Expenses",
+    "DRLCategoryId": 7753,
+    "DocumentId": "398e9079-e7e0-443b-89d4-5820079e65c0"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Other Taxes",
+    "DRLItemName": "Other Taxes",
+    "DRLCategoryId": 7756,
+    "DocumentId": "77b6524f-b2f4-406a-9fd4-6198b63cf6af"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Sch. F (Farm Income)",
+    "DRLItemName": "POULTRY FARMS - EGGS AND CHICKEN (11-2222333)",
+    "DRLCategoryId": 7567,
+    "DocumentId": "09184902-71ef-4be8-b106-3324e38229b7"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Schedule K-1s",
+    "DRLItemName": "Pp",
+    "DRLCategoryId": 7587,
+    "DocumentId": null
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Real Estate Taxes",
+    "DRLItemName": "Real Estate Taxes",
+    "DRLCategoryId": 7757,
+    "DocumentId": "ecd6bb84-ebfa-494d-b7b3-6f9137e4ab91"
+  },
+  {
+    "ClientNumber": "BULKFILL",
+    "DRLCategoryName": "Sch. E (Rents and Royalties)",
+    "DRLItemName": "royality",
+    "DRLCategoryId": 7589,
+    "DocumentId": "a5562650-5114-4721-8bba-0f9041beee26"
+  }
+]
