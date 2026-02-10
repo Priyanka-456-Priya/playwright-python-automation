@@ -75,6 +75,10 @@ swagger_cache.json
 node_modules/
 package-lock.json
 
+#testdata
+sureprep_test_data.json
+swagger_apis.json
+
 # Windows reserved names
 nul
 con
