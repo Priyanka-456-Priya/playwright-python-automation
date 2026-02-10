@@ -15,16 +15,16 @@ import allure
 
 class TestConfig:
     """Test configuration and setup"""
-    BASE_URL = os.getenv('SUREPREP_BASE_URL', 'https://devtr-api-iscrum.sureprep.com')
+    BASE_URL = os.getenv('SUREPREP_BASE_URL', 'https://api.sureprep.com')
 
     # V5 Credentials
-    V5_USERNAME = os.getenv('SUREPREP_V5_USERNAME', 'PRIYA1')
+    V5_USERNAME = os.getenv('SUREPREP_V5_USERNAME', 'PRIYA')
     V5_PASSWORD = os.getenv('SUREPREP_V5_PASSWORD', 'Abcd@12345')
-    V5_API_KEY = os.getenv('SUREPREP_V5_API_KEY', 'C690222D-8625-46F7-92CC-A61DA060D7A9')
+    V5_API_KEY = os.getenv('SUREPREP_V5_API_KEY', '24CDFF63-782A-4382-9F4B-0272C03ED095')
 
     # V7 Credentials
-    V7_CLIENT_ID = os.getenv('SUREPREP_V7_CLIENT_ID', 'GxJQo22jTg9koTeDtbIHpg8nmWdns9cu')
-    V7_CLIENT_SECRET = os.getenv('SUREPREP_V7_CLIENT_SECRET', 'yZdKNGi2b-Fsp1uWZllPnST7VM2PdSc3hDC4_rZ5tfGektIltwkfYPLLDEGD6f_M')
+    V7_CLIENT_ID = os.getenv('SUREPREP_V7_CLIENT_ID', 'xfO08U5uScAnOISU76C9EOi68XYFfIuR')
+    V7_CLIENT_SECRET = os.getenv('SUREPREP_V7_CLIENT_SECRET', '0YouHK5_NSkBCJBhPdf2LpgI7Boml16KY8EsHjG8fclmoKv0Q29xo1q-GAaARITk')
 
     TIMEOUT = 30
     AUTH_TOKEN_V5 = None
